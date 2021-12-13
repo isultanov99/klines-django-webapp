@@ -1,0 +1,9 @@
+{% extends 'stations/base.html' %}
+{% block title %}{{ object.name }} - Калининградские линии{% endblock %}
+
+{% block content %}
+     <div class="col vh-100 hw-100 overflow-hidden">
+        <h3>{{ object.name }}</h3>
+        <div>{{ my_map |safe }}</div>
+    </div>
+{% endblock %}

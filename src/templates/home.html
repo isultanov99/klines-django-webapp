@@ -1,0 +1,563 @@
+{% extends 'base.html' %}
+{% block title %}Главная — Калининградские линии{% endblock %}
+{% block content %}
+    <div class="col py-3 vh-100 hw-100" data-pan-on-drag="" data-zoom-on-wheel="min-scale: 0.9; max-scale: 200;"
+         style="width: 100%; overflow: hidden; height: 100%;">
+        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+             viewBox="0 0 12590 9590" style="enable-background:new 0 0 12590 9590;" xml:space="preserve">
+    <style type="text/css">
+	.st0 {
+        fill: #BE2A2A;
+    }
+
+    .st1 {
+        fill: #FFFFFF;
+    }
+
+    .st2 {
+        font-family: 'PT Mono';
+    }
+
+    .st3 {
+        font-size: 163.84px;
+        cursor: default;
+    }
+
+    .st4 {
+        fill: none;
+        stroke: #BE2A2A;
+        stroke-width: 60;
+        stroke-miterlimit: 8.192;
+    }
+
+    .st5 {
+        font-size: 163.0208px;
+        font-weight: bold;
+        cursor: pointer;
+    }
+
+    .st6 {
+        fill: #0047AB;
+    }
+
+    .st7 {
+        fill: none;
+        stroke: #0047AB;
+        stroke-width: 60;
+        stroke-miterlimit: 8.192;
+    }
+
+    .st8 {
+        fill: #F15A24;
+    }
+
+    .st9 {
+        fill: none;
+        stroke: #F15A24;
+        stroke-width: 66.2913;
+        stroke-miterlimit: 8.192;
+    }
+
+    .st10 {
+        fill: none;
+        stroke: #F15A24;
+        stroke-width: 60;
+        stroke-miterlimit: 8.192;
+    }
+
+    .st11 {
+        fill: #00A99D;
+    }
+
+    .st12 {
+        fill: none;
+        stroke: #00A99D;
+        stroke-width: 60;
+        stroke-miterlimit: 8.192;
+    }
+
+    .st13 {
+        fill: none;
+        stroke: #000000;
+        stroke-width: 60;
+        stroke-miterlimit: 10;
+    }
+
+    .st14 {
+        fill: #9E005D;
+    }
+
+    .st15 {
+        fill: none;
+        stroke: #9E005D;
+        stroke-width: 60;
+        stroke-miterlimit: 8.192;
+    }
+
+    .st16 {
+        fill: none;
+        stroke: #9E005D;
+        stroke-width: 60;
+        stroke-miterlimit: 10;
+    }
+
+    .st17 {
+        fill: #8CC63F;
+    }
+
+    .st18 {
+        fill: #FCEE21;
+    }
+
+    .st19 {
+        fill: none;
+        stroke: #FCEE21;
+        stroke-width: 60;
+        stroke-miterlimit: 8.192;
+    }
+
+    .st20 {
+        fill: none;
+        stroke: #8CC63F;
+        stroke-width: 60;
+        stroke-miterlimit: 8.192;
+    }
+
+    .st21 {
+        fill: none;
+        stroke: #8CC63F;
+        stroke-width: 60;
+        stroke-miterlimit: 10;
+    }
+</style>
+
+            <path id="red_x5F_sign_4_" class="st0" d="M1220,6300H880c-16.6,0-30-13.4-30-30v-140c0-16.6,13.4-30,30-30h340
+		c16.6,0,30,13.4,30,30v140C1250,6286.6,1236.6,6300,1220,6300z"/>
+            <text id="red_x5F_sign_1_" transform="matrix(1 0 0 1 853.3945 6250.3799)"
+                  class="st1 st2 st3">Балт</text>
+            <polyline id="red_x5F_1_2_" class="st4" points="1150,6000 1050,6000 950,6000 	"/>
+            <text id="baltiisk" transform="matrix(1 0 0 1 117.5117 6039.9995)" class="st2  st5"
+                  onclick="fill_by_click(this.id)">Балтийск</text>
+            <line id="red_x5F_ln_x5F_1_x5F_2_2_" class="st4" x1="1050" y1="5730" x2="1050" y2="5970"/>
+            <line id="red_x5F_2_2_" class="st4" x1="1080" y1="5700" x2="950" y2="5700"/>
+            <text id="45-km" transform="matrix(1 0 0 1 410.9453 5739.9995)" class="st2  st5"
+                  onclick="fill_by_click(this.id)">45 км</text>
+            <line id="red_x5F_ln_x5F_2_x5F_3_2_" class="st4" x1="1050" y1="5430" x2="1050" y2="5670"/>
+            <line id="red_x5F_3_2_" class="st4" x1="1080" y1="5400" x2="950" y2="5400"/>
+            <text id="mechnikovo" transform="matrix(1 0 0 1 19.7012 5439.9995)" class="st2  st5"
+                  onclick="fill_by_click(this.id)">Мечниково</text>
+            <line id="red_x5F_ln_x5F_3_x5F_4_2_" class="st4" x1="1050" y1="5130" x2="1050" y2="5370"/>
+            <line id="red_x5F_4_2_" class="st4" x1="1080" y1="5100" x2="950" y2="5100"/>
+            <text id="primorsk" transform="matrix(1 0 0 1 117.5117 5140)" class="st2  st5"
+                  onclick="fill_by_click(this.id)">Приморск</text>
+            <path id="red_x5F_ln_x5F_4_x5F_5_2_" class="st4" d="M1050,5070v-50c0-66.3,53.7-120,120-120h50"/>
+            <line id="red_x5F_5_2_" class="st4" x1="1250" y1="4930" x2="1250" y2="4800"/>
+            <text id="29-km" transform="matrix(0.7071 -0.7071 0.7071 0.7071 1249.9995 4750)" class="st2  st5"
+                  onclick="fill_by_click(this.id)">29 км</text>
+            <line id="red_x5F_ln_x5F_5_x5F_6_2_" class="st4" x1="1520" y1="4900" x2="1280" y2="4900"/>
+            <line id="red_x5F_6_2_" class="st4" x1="1550" y1="4930" x2="1550" y2="4800"/>
+            <text id="shipovka" transform="matrix(0.7071 -0.7071 0.7071 0.7071 1550.0001 4750)" class="st2  st5"
+                  onclick="fill_by_click(this.id)">Шиповка</text>
+            <line id="red_x5F_ln_x5F_6_x5F_7_2_" class="st4" x1="1820" y1="4900" x2="1580" y2="4900"/>
+            <line id="red_x5F_7_2_" class="st4" x1="1850" y1="4930" x2="1850" y2="4800"/>
+            <text id="18-km" transform="matrix(0.7071 -0.7071 0.7071 0.7071 1849.9994 4750.0005)" class="st2  st5"
+                  onclick="fill_by_click(this.id)">18 км</text>
+            <line id="red_x5F_ln_x5F_7_x5F_8_2_" class="st4" x1="2120" y1="4900" x2="1880" y2="4900"/>
+            <line id="red_x5F_8_2_" class="st4" x1="2150" y1="4930" x2="2150" y2="4800"/>
+            <text id="liublino" transform="matrix(0.7071 -0.7071 0.7071 0.7071 2150 4749.9995)" class="st2  st5"
+                  onclick="fill_by_click(this.id)">Люблино</text>
+            <line id="red_x5F_ln_x5F_8_x5F_9_2_" class="st4" x1="2420" y1="4900" x2="2180" y2="4900"/>
+            <line id="red_x5F_9_2_" class="st4" x1="2450" y1="4930" x2="2450" y2="4800"/>
+            <text id="13-km" transform="matrix(0.7071 -0.7071 0.7071 0.7071 2450 4749.9995)" class="st2  st5"
+                  onclick="fill_by_click(this.id)">13 км</text>
+            <line id="red_x5F_ln_x5F_9_x5F_10_2_" class="st4" x1="2720" y1="4900" x2="2480" y2="4900"/>
+            <line id="red_x5F_10_2_" class="st4" x1="2750" y1="4930" x2="2750" y2="4800"/>
+            <text id="lesnoe" transform="matrix(0.7071 -0.7071 0.7071 0.7071 2750 4749.9995)" class="st2  st5"
+                  onclick="fill_by_click(this.id)">Лесное</text>
+            <line id="red_x5F_ln_x5F_10_x5F_11_2_" class="st4" x1="3020" y1="4900" x2="2780" y2="4900"/>
+            <line id="red_x5F_11_2_" class="st4" x1="3050" y1="4930" x2="3050" y2="4800"/>
+            <text id="brusnichnaia" transform="matrix(0.7071 -0.7071 0.7071 0.7071 3050.0002 4749.9995)"
+                  class="st2  st5" onclick="fill_by_click(this.id)">Брусничная</text>
+            <line id="red_x5F_ln_x5F_11_x5F_12_2_" class="st4" x1="3320" y1="4900" x2="3080" y2="4900"/>
+            <line id="red_x5F_12_2_" class="st4" x1="3350" y1="4930" x2="3350" y2="4800"/>
+            <text id="zapadnyi" transform="matrix(0.7071 -0.7071 0.7071 0.7071 3350 4749.9995)" class="st2  st5"
+                  onclick="fill_by_click(this.id)">Западный</text>
+            <path id="red_x5F_12_x5F_13_3_" class="st4" d="M3380,4900h790c66.3,0,120,53.7,120,120v20"/>
+
+            <path id="blue_x5F_sign_2_" class="st6" d="M4520,9570h-340c-16.6,0-30-13.4-30-30v-140c0-16.6,13.4-30,30-30h340
+		c16.6,0,30,13.4,30,30v140C4550,9556.6,4536.6,9570,4520,9570z"/>
+            <text transform="matrix(1 0 0 1 4202.5459 9520.3799)" class="st1 st2 st3">Мам</text>
+            <polyline id="blue_x5F_1_2_" class="st7" points="4450,9270 4350,9270 4250,9270 	"/>
+            <text id="mamonovo" transform="matrix(1 0 0 1 3417.5112 9309.6836)" class="st2  st5"
+                  onclick="fill_by_click(this.id)">Мамоново</text>
+            <line id="blue_x5F_ln_x5F_1_x5F_2_2_" class="st7" x1="4350" y1="9000" x2="4350" y2="9240"/>
+            <line id="blue_x5F_2_2_" class="st7" x1="4380" y1="8970" x2="4250" y2="8970"/>
+            <text id="1333-km" transform="matrix(1 0 0 1 3515.3228 9009.6836)" class="st2  st5"
+                  onclick="fill_by_click(this.id)">1333 км</text>
+            <line id="blue_x5F_ln_x5F_2_x5F_3_2_" class="st7" x1="4350" y1="8700" x2="4350" y2="8940"/>
+            <line id="blue_x5F_3_2_" class="st7" x1="4380" y1="8670" x2="4250" y2="8670"/>
+            <text id="znamenka" transform="matrix(1 0 0 1 3417.5112 8709.6836)" class="st2  st5"
+                  onclick="fill_by_click(this.id)">Знаменка</text>
+            <line id="blue_x5F_ln_x5F_3_x5F_4_4_" class="st7" x1="4350" y1="8400" x2="4350" y2="8640"/>
+            <line id="blue_x5F_4_2_" class="st7" x1="4380" y1="8370" x2="4250" y2="8370"/>
+            <text id="primorskoe" transform="matrix(1 0 0 1 3221.8901 8409.6826)" class="st2  st5"
+                  onclick="fill_by_click(this.id)">Приморское</text>
+            <line id="blue_x5F_ln_x5F_4_x5F_5_2_" class="st7" x1="4350" y1="8100" x2="4350" y2="8340"/>
+            <line id="blue_x5F_5_2_" class="st7" x1="4380" y1="8070" x2="4250" y2="8070"/>
+            <text id="sosnovyi-bor" transform="matrix(1 0 0 1 3026.2681 8109.6831)" class="st2  st5"
+                  onclick="fill_by_click(this.id)">Сосновый Бор</text>
+            <line id="blue_x5F_ln_x5F_5_x5F_6_2_" class="st7" x1="4350" y1="7800" x2="4350" y2="8040"/>
+            <line id="blue_x5F_6_2_" class="st7" x1="4380" y1="7770" x2="4250" y2="7770"/>
+            <text id="ladushkin" transform="matrix(1 0 0 1 3417.5112 7809.6831)" class="st2  st5"
+                  onclick="fill_by_click(this.id)">Ладушкин</text>
+            <line id="blue_x5F_ln_x5F_6_x5F_7_2_" class="st7" x1="4350" y1="7500" x2="4350" y2="7740"/>
+            <line id="blue_x5F_7_2_" class="st7" x1="4380" y1="7470" x2="4250" y2="7470"/>
+            <text id="1312-km" transform="matrix(1 0 0 1 3515.3232 7509.6831)" class="st2  st5"
+                  onclick="fill_by_click(this.id)">1312 км</text>
+            <line id="blue_x5F_ln_x5F_7_x5F_8_2_" class="st7" x1="4350" y1="7200" x2="4350" y2="7440"/>
+            <line id="blue_x5F_8_2_" class="st7" x1="4380" y1="7170" x2="4250" y2="7170"/>
+            <text id="1307-km" transform="matrix(1 0 0 1 3515.3228 7209.6831)" class="st2  st5"
+                  onclick="fill_by_click(this.id)">1307 км</text>
+            <line id="blue_x5F_ln_x5F_8_x5F_9_2_" class="st7" x1="4350" y1="6900" x2="4350" y2="7140"/>
+            <line id="blue_x5F_9_2_" class="st7" x1="4380" y1="6870" x2="4250" y2="6870"/>
+            <text id="1305-km" transform="matrix(1 0 0 1 3515.3228 6909.6831)" class="st2  st5"
+                  onclick="fill_by_click(this.id)">1305 км</text>
+            <line id="blue_x5F_ln_x5F_9_x5F_10_2_" class="st7" x1="4350" y1="6600" x2="4350" y2="6840"/>
+            <line id="blue_x5F_10_2_" class="st7" x1="4380" y1="6570" x2="4250" y2="6570"/>
+            <text id="svetloe" transform="matrix(1 0 0 1 3515.3228 6609.6831)" class="st2  st5"
+                  onclick="fill_by_click(this.id)">Светлое</text>
+            <line id="blue_x5F_ln_x5F_10_x5F_11_2_" class="st7" x1="4350" y1="6300" x2="4350" y2="6540"/>
+            <line id="blue_x5F_11_2_" class="st7" x1="4380" y1="6270" x2="4250" y2="6270"/>
+            <text id="1298-km" transform="matrix(1 0 0 1 3515.3228 6309.6826)" class="st2  st5"
+                  onclick="fill_by_click(this.id)">1298 км</text>
+            <line id="blue_x5F_ln_x5F_11_x5F_12_2_" class="st7" x1="4350" y1="6000" x2="4350" y2="6240"/>
+            <line id="blue_x5F_12_2_" class="st7" x1="4380" y1="5969.7" x2="4250" y2="5970"/>
+            <text id="golubevo" transform="matrix(1 0 0 1 3417.5112 6009.6831)" class="st2  st5"
+                  onclick="fill_by_click(this.id)">Голубево</text>
+            <line id="blue_x5F_ln_x5F_12_x5F_13_2_" class="st7" x1="4350" y1="5700" x2="4350" y2="5940"/>
+            <line id="blue_x5F_13_2_" class="st7" x1="4380" y1="5670" x2="4250" y2="5670"/>
+            <text id="kievskaia" transform="matrix(1 0 0 1 3427.5112 5709.6831)" class="st2  st5"
+                  onclick="fill_by_click(this.id)">Киевская</text>
+            <line id="blue_x5F_ln_x5F_13_x5F_14_2_" class="st7" x1="4350" y1="5100" x2="4350" y2="5640"/>
+
+            <path id="org_x5F_sign_4_" class="st8" d="M6320,8070h-340c-16.6,0-30-13.4-30-30v-140c0-16.6,13.4-30,30-30l340,0.3
+		c16.6,0,30,13.4,30,30v140C6350,8056.9,6336.6,8070,6320,8070z"/>
+            <text id="org_x5F_sign_1_" transform="matrix(1 0 0 1 5953.395 8020.3799)"
+                  class="st1 st2 st3">Бгрт</text>
+            <polyline id="org_x5F_1_1_" class="st9" points="6250,7770 6150,7770 6050,7770 	"/>
+            <text id="bagrationovsk" transform="matrix(1 0 0 1 4728.4565 7809.6831)" class="st2  st5"
+                  onclick="fill_by_click(this.id)">Багратионовск</text>
+            <line id="org_x5F_ln_x5F_1_x5F_2_2_" class="st10" x1="6150" y1="7500" x2="6150" y2="7740"/>
+            <line id="org_x5F_2_2_" class="st10" x1="6180" y1="7469.7" x2="6050" y2="7470"/>
+            <text id="strelnia" transform="matrix(1 0 0 1 5227.5112 7509.6826)" class="st2  st5"
+                  onclick="fill_by_click(this.id)">Стрельня</text>
+            <line id="org_x5F_ln_x5F_2_x5F_3_2_" class="st10" x1="6150" y1="7200" x2="6150" y2="7440"/>
+            <line id="org_x5F_3_2_" class="st10" x1="6180" y1="7170" x2="6050" y2="7170"/>
+            <text id="21-km" transform="matrix(1 0 0 1 5510.9448 7209.6826)" class="st2  st5"
+                  onclick="fill_by_click(this.id)">21 км</text>
+            <line id="blue_x5F_ln_x5F_3_x5F_4_1_" class="st10" x1="6150" y1="6900" x2="6150" y2="7140"/>
+            <line id="org_x5F_4_2_" class="st10" x1="6180" y1="6870" x2="6050" y2="6870"/>
+            <text id="20-km-bgrt" transform="matrix(1 0 0 1 5021.8901 6909.6826)" class="st2  st5"
+                  onclick="fill_by_click(this.id)">20 км-Бгрт</text>
+            <line id="org_x5F_ln_x5F_4_x5F_5_2_" class="st10" x1="6150" y1="6600" x2="6150" y2="6840"/>
+            <line id="org_x5F_5_2_" class="st10" x1="6180" y1="6570" x2="6050" y2="6570"/>
+            <text id="vladimirov" transform="matrix(1 0 0 1 5021.8901 6609.6826)" class="st2  st5"
+                  onclick="fill_by_click(this.id)">Владимиров</text>
+            <line id="org_x5F_ln_x5F_5_x5F_6_2_" class="st10" x1="6150" y1="6300" x2="6150" y2="6540"/>
+            <line id="org_x5F_6_2_" class="st10" x1="6180" y1="6270" x2="6050" y2="6270"/>
+            <text id="otvazhnoe" transform="matrix(1 0 0 1 5217.5112 6309.6831)" class="st2  st5"
+                  onclick="fill_by_click(this.id)">Отважное</text>
+            <line id="org_x5F_ln_x5F_6_x5F_7_2_" class="st10" x1="6150" y1="6000" x2="6150" y2="6240"/>
+            <line id="org_x5F_7_2_" class="st10" x1="6180" y1="5970" x2="6050" y2="5970"/>
+            <text id="4-km" transform="matrix(1 0 0 1 5608.7554 6009.6831)" class="st2  st5"
+                  onclick="fill_by_click(this.id)">4 км</text>
+            <path id="org_x5F_7_x5F_8_2_" class="st10"
+                  d="M6150,5940v-300c0-66.3-53.7-120-120-120H4530c-66.3,0-120-53.7-120-120v-300"/>
+
+            <path id="cyan_x5F_sign_2_" class="st11" d="M12230,5560h-340c-16.6,0-30-13.4-30-30v-140c0-16.6,13.4-30,30-30h340
+		c16.6,0,30,13.4,30,30v140C12260,5546.6,12246.6,5560,12230,5560z"/>
+            <text transform="matrix(1 0 0 1 11863.3896 5510.3867)" class="st1 st2 st3">Черн</text>
+            <polyline id="cyan_x5F_1_2_" class="st12" points="11750,5360 11750,5461.9 11750,5560 	"/>
+            <text id="chernyshevskoe" transform="matrix(0.7071 -0.7071 0.7071 0.7071 11750 5310.001)"
+                  class="st2  st5" onclick="fill_by_click(this.id)">Чернышевское</text>
+            <line id="cyan_x5F_ln_x5F_1_x5F_2_2_" class="st12" x1="11480" y1="5460" x2="11720" y2="5460"/>
+            <line id="cyan_x5F_2_2_" class="st12" x1="11450" y1="5360" x2="11450" y2="5490"/>
+            <text id="nesterov" transform="matrix(0.7071 -0.7071 0.7071 0.7071 11450 5310.0005)" class="st2  st5"
+                  onclick="fill_by_click(this.id)">Нестеров</text>
+            <line id="cyan_x5F_ln_x5F_2_x5F_3_2_" class="st12" x1="11180" y1="5460" x2="11420" y2="5460"/>
+            <line id="cyan_x5F_3_2_" class="st12" x1="11150" y1="5360" x2="11150" y2="5490"/>
+            <text id="divnoe" transform="matrix(0.7071 -0.7071 0.7071 0.7071 11150.001 5310.001)" class="st2  st5"
+                  onclick="fill_by_click(this.id)">Дивное</text>
+            <line id="cyan_x5F_ln_x5F_3_x5F_4_2_" class="st12" x1="10880" y1="5460" x2="11120" y2="5460"/>
+            <line id="cyan_x5F_4_2_" class="st12" x1="10850" y1="5360" x2="10850" y2="5490"/>
+            <text id="gusev" transform="matrix(0.7071 -0.7071 0.7071 0.7071 10849.999 5309.999)" class="st2  st5"
+                  onclick="fill_by_click(this.id)">Гусев</text>
+            <line id="cyan_x5F_ln_x5F_4_x5F_5_2_" class="st12" x1="10580" y1="5460" x2="10820" y2="5460"/>
+            <line id="cyan_x5F_5_2_" class="st12" x1="10550" y1="5360" x2="10550" y2="5490"/>
+            <text id="veselovka" transform="matrix(0.7071 -0.7071 0.7071 0.7071 10550.001 5309.999)"
+                  class="st2  st5" onclick="fill_by_click(this.id)">Веселовка</text>
+            <line id="cyan_x5F_ln_x5F_5_x5F_6_2_" class="st12" x1="10280" y1="5460" x2="10520" y2="5460"/>
+            <line id="cyan_x5F_6_2_" class="st12" x1="10250" y1="5360" x2="10250" y2="5490"/>
+            <text id="cherniakhovsk" transform="matrix(0.7071 -0.7071 0.7071 0.7071 10250.001 5310.0005)"
+                  class="st2  st5" onclick="fill_by_click(this.id)">Черняховск</text>
+            <line id="cyan_x5F_ln_x5F_6_x5F_7_2_" class="st12" x1="9980" y1="5460" x2="10220" y2="5460"/>
+            <line id="cyan_x5F_7_2_" class="st12" x1="9950" y1="5360" x2="9950" y2="5490"/>
+            <text id="pastukhovo" transform="matrix(0.7071 -0.7071 0.7071 0.7071 9950 5310)" class="st2  st5"
+                  onclick="fill_by_click(this.id)">Пастухово</text>
+            <line id="cyan_x5F_ln_x5F_7_x5F_8_2_" class="st12" x1="9680" y1="5460" x2="9920" y2="5460"/>
+            <line id="cyan_x5F_8_2_" class="st12" x1="9650" y1="5360" x2="9650" y2="5490"/>
+            <text id="mezhdureche" transform="matrix(0.7071 -0.7071 0.7071 0.7071 9650.001 5310.0005)"
+                  class="st2  st5" onclick="fill_by_click(this.id)">Междуречье</text>
+            <line id="cyan_x5F_ln_x5F_8_x5F_9_2_" class="st12" x1="9380" y1="5460" x2="9620" y2="5460"/>
+            <line id="cyan_x5F_9_2_" class="st12" x1="9350" y1="5360" x2="9350" y2="5490"/>
+            <text id="pushkarevo" transform="matrix(0.7071 -0.7071 0.7071 0.7071 9350 5310)" class="st2  st5"
+                  onclick="fill_by_click(this.id)">Пушкарёво</text>
+            <line id="cyan_x5F_ln_x5F_9_x5F_10_2_" class="st12" x1="9080" y1="5460" x2="9320" y2="5460"/>
+            <line id="cyan_x5F_10_2_" class="st12" x1="9050" y1="5360" x2="9050" y2="5490"/>
+            <text id="znamensk" transform="matrix(0.7071 -0.7071 0.7071 0.7071 9050 5310.0005)" class="st2  st5"
+                  onclick="fill_by_click(this.id)">Знаменск</text>
+            <line id="cyan_x5F_ln_x5F_10_x5F_11_2_" class="st12" x1="8780" y1="5460" x2="9020" y2="5460"/>
+            <line id="cyan_x5F_11_2_" class="st12" x1="8750" y1="5360" x2="8750" y2="5490"/>
+            <text id="gvardeisk" transform="matrix(0.7071 -0.7071 0.7071 0.7071 8750.001 5310)" class="st2  st5"
+                  onclick="fill_by_click(this.id)">Гвардейск</text>
+            <line id="cyan_x5F_ln_x5F_11_x5F_12_2_" class="st12" x1="8480" y1="5460" x2="8720" y2="5460"/>
+            <line id="cyan_x5F_12_2_" class="st12" x1="8449.7" y1="5360" x2="8450" y2="5490"/>
+            <text id="1252-km" transform="matrix(0.7071 -0.7071 0.7071 0.7071 8450 5309.9995)" class="st2  st5"
+                  onclick="fill_by_click(this.id)">1252 км</text>
+            <line id="cyan_x5F_ln_x5F_12_x5F_13_2_" class="st12" x1="8180" y1="5460" x2="8420" y2="5460"/>
+            <line id="cyan_x5F_13_2_" class="st12" x1="8150" y1="5360" x2="8150" y2="5490"/>
+            <text id="ozerki" transform="matrix(0.7071 -0.7071 0.7071 0.7071 8149.9995 5309.9995)" class="st2  st5"
+                  onclick="fill_by_click(this.id)">Озерки</text>
+            <line id="cyan_x5F_ln_x5F_13_x5F_14_2_" class="st12" x1="7880" y1="5460" x2="8120" y2="5460"/>
+            <line id="cyan_x5F_14_2_" class="st12" x1="7850" y1="5360" x2="7850" y2="5490"/>
+            <text id="komsomolsk" transform="matrix(0.7071 -0.7071 0.7071 0.7071 7849.9995 5309.9995)"
+                  class="st2  st5" onclick="fill_by_click(this.id)">Комсомольск</text>
+            <line id="cyan_x5F_ln_x5F_14_x5F_15_2_" class="st12" x1="7580" y1="5460" x2="7820" y2="5460"/>
+            <line id="cyan_x5F_15_2_" class="st12" x1="7550" y1="5360" x2="7550" y2="5490"/>
+            <text id="1271-km" transform="matrix(0.7071 -0.7071 0.7071 0.7071 7549.9995 5309.9995)"
+                  class="st2  st5" onclick="fill_by_click(this.id)">1271 км</text>
+            <line id="cyan_x5F_ln_x5F_15_x5F_16_2_" class="st12" x1="7280" y1="5460" x2="7520" y2="5460"/>
+            <line id="cyan_x5F_16_2_" class="st12" x1="7250" y1="5360" x2="7250" y2="5490"/>
+            <text id="lugovoe" transform="matrix(0.7071 -0.7071 0.7071 0.7071 7249.9995 5309.9995)"
+                  class="st2  st5" onclick="fill_by_click(this.id)">Луговое</text>
+            <line id="cyan_x5F_ln_x5F_16_x5F_17_2_" class="st12" x1="6980" y1="5460" x2="7220" y2="5460"/>
+            <line id="cyan_x5F_17_2_" class="st12" x1="6950" y1="5360" x2="6950" y2="5490"/>
+            <text id="aivazovskii" transform="matrix(0.7071 -0.7071 0.7071 0.7071 6949.9995 5309.9995)"
+                  class="st2  st5" onclick="fill_by_click(this.id)">Айвазовский</text>
+            <path id="cyan_x5F_ln_x5F_17_x5F_18_2_" class="st12"
+                  d="M4470,5100v300c0,33.1,26.9,60,60,60h1700l690,0"/>
+
+            <line class="st13" x1="4260" y1="5070" x2="4570" y2="5070"/>
+            <text id="kaliningrad-iuzhnyi" transform="matrix(1 0 0 1 4620 5120)" class="st2  st5"
+                  onclick="fill_by_click(this.id)">Калининград-Южный</text>
+            <line class="st13" x1="4320" y1="4470" x2="4570" y2="4470"/>
+            <text id="kaliningrad-severnyi" transform="matrix(1 0 0 1 4620 4520)" class="st2  st5"
+                  onclick="fill_by_click(this.id)">Калининград-Северный</text>
+            <line class="st13" x1="4380" y1="3970" x2="4570" y2="3970"/>
+            <text id="kutuzovo" transform="matrix(1 0 0 1 4620 4019.9998)" class="st2  st5"
+                  onclick="fill_by_click(this.id)">Кутузово</text>
+            <text id="pionerskii-kurort" transform="matrix(0.7071 -0.7071 0.7071 0.7071 3150.0002 1290.0004)"
+                  class="st2  st5" onclick="fill_by_click(this.id)">Пионерский Курорт</text>
+            <text id="svetlogorsk-1" transform="matrix(0.7071 -0.7071 0.7071 0.7071 2850.0012 1290.0004)"
+                  class="st2  st5" onclick="fill_by_click(this.id)">Светлогорск-1</text>
+            <text id="svetlogorsk-2" transform="matrix(0.7071 -0.7071 0.7071 0.7071 2549.9993 1290.0007)"
+                  class="st2  st5" onclick="fill_by_click(this.id)">Светлогорск-2</text>
+            <line class="st13" x1="2550" y1="1600" x2="2550" y2="1340"/>
+            <line class="st13" x1="2850" y1="1530" x2="2850" y2="1340"/>
+            <line class="st13" x1="3150" y1="1530" x2="3150" y2="1340"/>
+
+            <path id="magenta_x5F_sign_4_" class="st14" d="M11920,3820h-340c-16.6,0-30-13.4-30-30v-140c0-16.6,13.4-30,30-30h340
+		c16.6,0,30,13.4,30,30v140C11950,3806.6,11936.6,3820,11920,3820z"/>
+            <text transform="matrix(1 0 0 1 11602.5469 3770.3801)" class="st1 st2 st3">Сов</text>
+            <polyline id="magenta_x5F_1_2_" class="st15" points="11450,3620 11450,3721.9 11450,3820 	"/>
+            <text id="sovetsk" transform="matrix(0.7071 -0.7071 0.7071 0.7071 11449.999 3570.0005)"
+                  class="st2  st5" onclick="fill_by_click(this.id)">Советск</text>
+            <line id="magenta_x5F_ln_x5F_1_x5F_2_2_" class="st15" x1="11180" y1="3720" x2="11420" y2="3720"/>
+            <line id="magenta_x5F_2_2_" class="st15" x1="11150" y1="3620" x2="11150" y2="3750"/>
+            <text id="119-km" transform="matrix(0.7071 -0.7071 0.7071 0.7071 11150.001 3569.9998)" class="st2  st5"
+                  onclick="fill_by_click(this.id)">119 км</text>
+            <line id="magenta_x5F_ln_x5F_2_x5F_3_2_" class="st15" x1="10880" y1="3720" x2="11120" y2="3720"/>
+            <line id="magenta_x5F_3_2_" class="st15" x1="10850" y1="3620" x2="10850" y2="3750"/>
+            <text id="rzhevskoe" transform="matrix(0.7071 -0.7071 0.7071 0.7071 10850 3570)" class="st2  st5"
+                  onclick="fill_by_click(this.id)">Ржевское</text>
+            <line id="magenta_x5F_ln_x5F_3_x5F_4_2_" class="st15" x1="10580" y1="3720" x2="10820" y2="3720"/>
+            <line id="magenta_x5F_4_2_" class="st15" x1="10550" y1="3620" x2="10550" y2="3750"/>
+            <text id="shcheglovka" transform="matrix(0.7071 -0.7071 0.7071 0.7071 10550.001 3570)" class="st2  st5"
+                  onclick="fill_by_click(this.id)">Щегловка</text>
+            <line id="magenta_x5F_ln_x5F_4_x5F_5_2_" class="st15" x1="10280" y1="3720" x2="10520" y2="3720"/>
+            <line id="magenta_x5F_5_2_" class="st15" x1="10250" y1="3620" x2="10250" y2="3750"/>
+            <text id="slavsk" transform="matrix(0.7071 -0.7071 0.7071 0.7071 10250 3570)" class="st2  st5"
+                  onclick="fill_by_click(this.id)">Славск</text>
+            <line id="magenta_x5F_ln_x5F_5_x5F_6_2_" class="st15" x1="9980" y1="3720" x2="10220" y2="3720"/>
+            <line id="magenta_x5F_6_2_" class="st15" x1="9950" y1="3620" x2="9950" y2="3750"/>
+            <text id="bolshakovo" transform="matrix(0.7071 -0.7071 0.7071 0.7071 9950 3570.0002)" class="st2  st5"
+                  onclick="fill_by_click(this.id)">Большаково</text>
+            <line id="magenta_x5F_ln_x5F_6_x5F_7_2_" class="st15" x1="9680" y1="3720" x2="9920" y2="3720"/>
+            <line id="magenta_x5F_7_2_" class="st15" x1="9650" y1="3620" x2="9650" y2="3750"/>
+            <text id="zalese" transform="matrix(0.7071 -0.7071 0.7071 0.7071 9650.001 3570)" class="st2  st5"
+                  onclick="fill_by_click(this.id)">Залесье</text>
+            <line id="magenta_x5F_ln_x5F_7_x5F_8_2_" class="st15" x1="9380" y1="3720" x2="9620" y2="3720"/>
+            <line id="magenta_x5F_8_2_" class="st15" x1="9350" y1="3620" x2="9350" y2="3750"/>
+            <text id="bogatovo" transform="matrix(0.7071 -0.7071 0.7071 0.7071 9350.001 3570)" class="st2  st5"
+                  onclick="fill_by_click(this.id)">Богатово</text>
+            <line id="magenta_x5F_ln_x5F_8_x5F_9_2_" class="st15" x1="9080" y1="3720" x2="9320" y2="3720"/>
+            <line id="magenta_x5F_9_2_" class="st15" x1="9050" y1="3620" x2="9050" y2="3750"/>
+            <text id="petino" transform="matrix(0.7071 -0.7071 0.7071 0.7071 9050 3570.0007)" class="st2  st5"
+                  onclick="fill_by_click(this.id)">Петино</text>
+            <line id="magenta_x5F_ln_x5F_9_x5F_10_2_" class="st15" x1="8780" y1="3720" x2="9020" y2="3720"/>
+            <line id="magenta_x5F_10_2_" class="st15" x1="8750" y1="3620" x2="8750" y2="3750"/>
+            <text id="sholokhovo" transform="matrix(0.7071 -0.7071 0.7071 0.7071 8750.001 3569.9998)"
+                  class="st2  st5" onclick="fill_by_click(this.id)">Шолохово</text>
+            <line id="magenta_x5F_ln_x5F_10_x5F_11_2_" class="st15" x1="8480" y1="3720" x2="8720" y2="3720"/>
+            <line id="magenta_x5F_11_2_" class="st15" x1="8450" y1="3620" x2="8450" y2="3750"/>
+            <text id="polessk" transform="matrix(0.7071 -0.7071 0.7071 0.7071 8450.001 3570)" class="st2  st5"
+                  onclick="fill_by_click(this.id)">Полесск</text>
+            <line id="magenta_x5F_ln_x5F_11_x5F_12_2_" class="st15" x1="8180" y1="3720" x2="8420" y2="3720"/>
+            <line id="magenta_x5F_12_2_" class="st15" x1="8149.7" y1="3620" x2="8150" y2="3750"/>
+            <text id="slavianskoe" transform="matrix(0.7071 -0.7071 0.7071 0.7071 8149.9995 3570.001)"
+                  class="st2  st5" onclick="fill_by_click(this.id)">Славянское</text>
+            <line id="magenta_x5F_ln_x5F_12_x5F_13_2_" class="st15" x1="7880" y1="3720" x2="8120" y2="3720"/>
+            <line id="magenta_x5F_13_2_" class="st15" x1="7850" y1="3620" x2="7850" y2="3750"/>
+            <text id="dobrino" transform="matrix(0.7071 -0.7071 0.7071 0.7071 7850 3570.0005)" class="st2  st5"
+                  onclick="fill_by_click(this.id)">Добрино</text>
+            <line id="magenta_x5F_ln_x5F_13_x5F_14_2_" class="st15" x1="7580" y1="3720" x2="7820" y2="3720"/>
+            <line id="magenta_x5F_14_2_" class="st15" x1="7550" y1="3620" x2="7550" y2="3750"/>
+            <text id="baevka-2" transform="matrix(0.7071 -0.7071 0.7071 0.7071 7550 3570.0005)" class="st2  st5"
+                  onclick="fill_by_click(this.id)">Баевка-2</text>
+            <line id="magenta_x5F_ln_x5F_14_x5F_15_2_" class="st15" x1="7280" y1="3720" x2="7520" y2="3720"/>
+            <line id="magenta_x5F_15_2_" class="st15" x1="7250" y1="3620" x2="7250" y2="3750"/>
+            <text id="baevka-1" transform="matrix(0.7071 -0.7071 0.7071 0.7071 7250 3570.0005)"
+                  class="st2  st5" onclick="fill_by_click(this.id)">Баевка-1</text>
+            <line id="magenta_x5F_ln_x5F_15_x5F_16_2_" class="st15" x1="6980" y1="3720" x2="7220" y2="3720"/>
+            <line id="magenta_x5F_16_2_" class="st15" x1="6950" y1="3620" x2="6950" y2="3750"/>
+            <text id="konstantinovka" transform="matrix(0.7071 -0.7071 0.7071 0.7071 6950 3570.0005)"
+                  class="st2  st5" onclick="fill_by_click(this.id)">Константиновка</text>
+            <line id="magenta_x5F_ln_x5F_16_x5F_17_4_" class="st15" x1="6680" y1="3720" x2="6920" y2="3720"/>
+            <line id="magenta_x5F_17_1_" class="st15" x1="6650" y1="3620" x2="6650" y2="3750"/>
+            <text id="gurevsk-2" transform="matrix(0.7071 -0.7071 0.7071 0.7071 6650 3570.0005)" class="st2  st5"
+                  onclick="fill_by_click(this.id)">Гурьевск-2</text>
+            <line id="magenta_x5F_ln_x5F_16_x5F_17_1_" class="st15" x1="6380" y1="3720" x2="6620" y2="3720"/>
+            <line id="magenta_x5F_18_2_" class="st15" x1="6350" y1="3620" x2="6350" y2="3750"/>
+            <text id="gurevsk-1" transform="matrix(0.7071 -0.7071 0.7071 0.7071 6350 3570.0005)" class="st2  st5"
+                  onclick="fill_by_click(this.id)">Гурьевск-1</text>
+            <path id="magenta_x5F_ln_x5F_18_x5F_19_2_" class="st16"
+                  d="M6320,3720H4590c-66.3,0-120,53.7-120,120v100"/>
+            <line class="st15" x1="4470" y1="4000" x2="4470" y2="4440"/>
+            <line class="st15" x1="4470" y1="4500" x2="4470" y2="5040"/>
+            <path id="magenta_x5F_sign_2_" class="st17" d="M5020,1740h-340c-16.6,0-30-13.4-30-30v-140c0-16.6,13.4-30,30-30h340
+		c16.6,0,30,13.4,30,30v140C5050,1726.6,5036.6,1740,5020,1740z"/>
+            <text transform="matrix(1 0 0 1 4702.5459 1690.3792)" class="st1 st2 st3">Зел</text>
+
+            <path id="yel_x5F_sign_1_" class="st18" d="M2420,1570h-340c-16.6,0-30-13.4-30-30v-140c0-16.6,13.4-30,30-30h340
+		c16.6,0,30,13.4,30,30v140C2450,1556.6,2436.6,1570,2420,1570z"/>
+            <text transform="matrix(1 0 0 1 2053.3945 1520.0002)" class="st2 st3">Свет</text>
+            <line id="yel_x5F_ln_x5F_1_x5F_2_3_" class="st19" x1="2820" y1="1500" x2="2580" y2="1500"/>
+            <line id="yel_x5F_ln_x5F_2_x5F_3_3_" class="st19" x1="3120" y1="1500" x2="2880" y2="1500"/>
+            <path id="yel_x5F_ln_x5F_3_x5F_4_1_" class="st19" d="M3300,1740v-120c0-66.3-53.7-120-120-120l0,0"/>
+            <line id="yel_x5F_4_9_" class="st19" x1="3330" y1="1770" x2="3200" y2="1770"/>
+            <text id="romanovo" transform="matrix(1 0 0 1 2367.5117 1810.0017)" class="st2  st5"
+                  onclick="fill_by_click(this.id)">Романово</text>
+            <line id="yel_x5F_ln_x5F_4_x5F_5_2_" class="st19" x1="3300" y1="2040" x2="3300" y2="1800"/>
+            <line id="yel_x5F_5_2_" class="st19" x1="3330" y1="2070" x2="3200" y2="2070"/>
+            <text id="pereslavskoe" transform="matrix(1 0 0 1 1976.2686 2110.0017)" class="st2  st5"
+                  onclick="fill_by_click(this.id)">Переславское</text>
+            <line id="yel_x5F_ln_x5F_5_x5F_6_2_" class="st19" x1="3300" y1="2340" x2="3300" y2="2100"/>
+            <line id="yel_x5F_6_2_" class="st19" x1="3330" y1="2370" x2="3200" y2="2370"/>
+            <text id="20-km-svet" transform="matrix(1 0 0 1 2171.8907 2410.0022)" class="st2  st5"
+                  onclick="fill_by_click(this.id)">20 км-Свет</text>
+            <line id="yel_x5F_ln_x5F_6_x5F_7_2_" class="st19" x1="3300" y1="2640" x2="3300" y2="2400"/>
+            <line id="yel_x5F_7_2_" class="st19" x1="3330" y1="2670" x2="3200" y2="2670"/>
+            <text id="kolosovka" transform="matrix(1 0 0 1 2269.7012 2720.0022)" class="st2  st5"
+                  onclick="fill_by_click(this.id)">Колосовка</text>
+            <line id="yel_x5F_ln_x5F_7_x5F_8_2_" class="st19" x1="3300" y1="2940" x2="3300" y2="2700"/>
+            <line id="yel_x5F_8_2_" class="st19" x1="3330" y1="2970" x2="3200" y2="2970"/>
+            <text id="druzhnoe" transform="matrix(1 0 0 1 2465.3232 3010.0022)" class="st2  st5"
+                  onclick="fill_by_click(this.id)">Дружное</text>
+            <line id="yel_x5F_ln_x5F_8_x5F_9_2_" class="st19" x1="3300" y1="3240" x2="3300" y2="3000"/>
+            <line id="yel_x5F_9_2_" class="st19" x1="3330" y1="3270" x2="3200" y2="3270"/>
+            <text id="chkalovsk" transform="matrix(1 0 0 1 2367.5117 3310.002)" class="st2  st5"
+                  onclick="fill_by_click(this.id)">Чкаловск</text>
+            <line id="yel_x5F_ln_x5F_9_x5F_10_2_" class="st19" x1="3300" y1="3540" x2="3300" y2="3300"/>
+            <line id="yel_x5F_10_1_" class="st19" x1="3330" y1="3570" x2="3200" y2="3570"/>
+            <text id="selma" transform="matrix(1 0 0 1 2563.1338 3610.0007)" class="st2  st5"
+                  onclick="fill_by_click(this.id)">Сельма</text>
+            <path id="yel_x5F_ln_x5F_10_x5F_11_1_" class="st19" d="M3300,3600L3300,3600c0,97.9,55.9,187.1,143.9,229.9l762.2,370.2
+		c88,42.8,143.9,132,143.9,229.9v10"/>
+            <line class="st19" x1="4350" y1="4500" x2="4350" y2="5040"/>
+
+            <line id="gr_x5F_ln_x5F_1_x5F_2" class="st20" x1="4410" y1="5040" x2="4410" y2="4500"/>
+            <line id="gr_x5F_ln_x5F_2_x5F_3" class="st20" x1="4410" y1="4440" x2="4410" y2="4000"/>
+            <path id="gr_x5F_ln_x5F_3_x5F_4_1_" class="st21"
+                  d="M4410,3940v-103c0-97.8,79.2-177,177-177h443c66.3,0,120-53.7,120-120v-240"/>
+            <line id="gr_x5F_4_1_" class="st21" x1="5250" y1="3270" x2="5120" y2="3270"/>
+            <text id="7-km" transform="matrix(1 0 0 1 5300 3300.001)" class="st2  st5"
+                  onclick="fill_by_click(this.id)">7 км</text>
+            <line id="gr_x5F_ln_x5F_4_x5F_5_1_" class="st21" x1="5150" y1="3240" x2="5150" y2="3000"/>
+            <line id="gr_x5F_5_1_" class="st21" x1="5250" y1="2970" x2="5120" y2="2970"/>
+            <text id="riabinovka" transform="matrix(1 0 0 1 5300 3000.0017)" class="st2  st5"
+                  onclick="fill_by_click(this.id)">Рябиновка</text>
+            <foreignObject x="6400" y="2400" width="730" height="290">
+                <span class="material-icons" style="font-size:250px;cursor: default;">local_airport</span>
+                <text class="st2" style="cursor: default; font-size: 260px; font-weight: bold">KGD</text>
+            </foreignObject>
+            <line id="gr_x5F_5_x5F_6_1_" class="st21" x1="5150" y1="2940" x2="5150" y2="2700"/>
+            <line id="gr_x5F_6_1_" class="st21" x1="5250" y1="2670" x2="5120" y2="2670"/>
+            <text id="kashtanovka" transform="matrix(1 0 0 1 5300 2710.0012)" class="st2  st5"
+                  onclick="fill_by_click(this.id)">Каштановка</text>
+            <line id="gr_x5F_ln_x5F_6_x5F_7_1_" class="st21" x1="5150" y1="2640" x2="5150" y2="2400"/>
+            <line id="gr_x5F_7_1_" class="st21" x1="5250" y1="2370" x2="5120" y2="2370"/>
+            <text id="muromskoe" transform="matrix(1 0 0 1 5300 2400.0012)" class="st2  st5"
+                  onclick="fill_by_click(this.id)">Муромское</text>
+            <line id="gr_x5F_ln_x5F_7_x5F_8_1_" class="st21" x1="5150" y1="2340" x2="5150" y2="2100"/>
+            <line id="gr_x5F_8_1_" class="st21" x1="5250" y1="2070" x2="5120" y2="2070"/>
+            <text id="sosnovka" transform="matrix(1 0 0 1 5300 2100.0007)" class="st2  st5"
+                  onclick="fill_by_click(this.id)">Сосновка</text>
+            <line id="gr_x5F_ln_x5F_8_x5F_9_1_" class="st21" x1="5150" y1="2040" x2="5150" y2="1800"/>
+            <line id="gr_x5F_9_1_" class="st21" x1="5250" y1="1770" x2="5120" y2="1770"/>
+            <text id="zelenogradsk" transform="matrix(1 0 0 1 5300 1800.0007)" class="st2  st5"
+                  onclick="fill_by_click(this.id)">Зеленоградск</text>
+            <path id="gr_x5F_ln_x5F_9_x5F_10_1_" class="st21" d="M5150,1740v-180c0-66.3-53.7-120-120-120l-50,0"/>
+            <line id="gr_x5F_10_1_" class="st21" x1="4950" y1="1340" x2="4950" y2="1470"/>
+            <text id="primore" transform="matrix(0.7071 -0.7071 0.7071 0.7071 4950.0767 1290.0005)"
+                  class="st2  st5" onclick="fill_by_click(this.id)">Приморье</text>
+            <line id="gr_x5F_ln_x5F_10_x5F_11_1_" class="st21" x1="4920" y1="1440" x2="4680" y2="1440"/>
+            <line id="gr_x5F_11_1_" class="st21" x1="4650" y1="1340" x2="4650" y2="1470"/>
+            <text id="malinovka" transform="matrix(0.7071 -0.7071 0.7071 0.7071 4650.0767 1290.0005)"
+                  class="st2  st5" onclick="fill_by_click(this.id)">Малиновка</text>
+            <line id="gr_x5F_11_x5F_12_1_" class="st21" x1="4620" y1="1440" x2="4380" y2="1440"/>
+            <line id="gr_x5F_12_1_" class="st21" x1="4350" y1="1340" x2="4350" y2="1470"/>
+            <text id="sokolniki-1" transform="matrix(0.7071 -0.7071 0.7071 0.7071 4350.0767 1290.0005)"
+                  class="st2  st5" onclick="fill_by_click(this.id)">Сокольники-1</text>
+            <line id="gr_x5F_ln_x5F_12_x5F_13_1_" class="st21" x1="4320" y1="1440" x2="4080" y2="1440"/>
+            <line id="gr_x5F_13_1_" class="st21" x1="4050" y1="1340" x2="4050" y2="1470"/>
+            <text id="sokolniki-2" transform="matrix(0.7071 -0.7071 0.7071 0.7071 4050.0769 1290.001)"
+                  class="st2  st5" onclick="fill_by_click(this.id)">Сокольники-2</text>
+            <line id="gr_x5F_ln_x5F_13_x5F_14_1_" class="st21" x1="4020" y1="1440" x2="3780" y2="1440"/>
+            <line id="gr_x5F_14_1_" class="st21" x1="3750" y1="1340" x2="3750" y2="1470"/>
+            <text id="roshchino" transform="matrix(0.7071 -0.7071 0.7071 0.7071 3750.0769 1290.0005)" class="st2 st5"
+                  onclick="fill_by_click(this.id)">Рощино</text>
+            <line id="gr_x5F_ln_x5F_14_x5F_15_1_" class="st21" x1="3720" y1="1440" x2="3480" y2="1440"/>
+            <line id="gr_x5F_15_1_" class="st21" x1="3450" y1="1340" x2="3450" y2="1470"/>
+            <text id="kulikovo" transform="matrix(0.7071 -0.7071 0.7071 0.7071 3450.0769 1290.0005)" class="st2 st5"
+                  onclick="fill_by_click(this.id)">Куликово</text>
+            <line id="gr_x5F_ln_x5F_15_x5F_16_1_" class="st21" x1="3420" y1="1440" x2="3180" y2="1440"/>
+            <line id="gr_x5F_ln_x5F_16_x5F_17_1_" class="st21" x1="3120" y1="1440" x2="2880" y2="1440"/>
+            <line id="gr_x5F_ln_x5F_17_x5F_18_1_" class="st21" x1="2820" y1="1440" x2="2580" y2="1440"/>
+            <script type="text/javascript">
+        function fill_by_click(clicked_id) {
+            var value = document.getElementById(clicked_id).textContent;
+            if (document.getElementById("From").value.length == 0 && document.getElementById("To").value != value)
+                document.getElementById("From").value = value;
+            else if (document.getElementById("To").value == value || (document.getElementById("From").value.length != 0 && document.getElementById("To").value.length != 0)) {
+                document.getElementById("From").value = value;
+                document.getElementById("To").value = "";
+            } else if (document.getElementById("To").value.length == 0 && document.getElementById("From").value != value)
+                document.getElementById("To").value = value;
+        }
+</script>
+        </svg>
+    </div>
+
+
+
+{% endblock %}
