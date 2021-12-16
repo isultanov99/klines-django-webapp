@@ -175,6 +175,7 @@ cython_debug/
 .idea/encodings.xml
 .idea/**/uiDesigner.xml
 .idea/**/dbnavigator.xml
+.idea
 
 # Gradle
 .idea/**/gradle.xml
