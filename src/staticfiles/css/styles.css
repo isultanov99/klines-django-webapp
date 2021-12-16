@@ -1,0 +1,55 @@
+
+.vh-10 {
+    height: 10vh !important
+}
+
+.vh-20 {
+    height: 20vh !important
+}
+
+.vh-30 {
+    height: 30vh !important
+}
+
+.vh-40 {
+    height: 40vh !important
+}
+
+.vh-50 {
+    height: 50vh !important
+}
+
+.vh-60 {
+    height: 60vh !important
+}
+
+.vh-70 {
+    height: 70vh !important
+}
+
+.vh-80 {
+    height: 80vh !important
+}
+
+.vh-90 {
+    height: 90vh !important
+}
+
+.vh-92 {
+    height: 92vh !important
+}
+
+ul.separator {
+    list-style: none;
+    padding: 0;
+    width: 100%;
+}
+
+ul.separator li {
+    padding: .5em 0;
+    border-bottom: 1px solid #CCC;
+}
+
+ul.separator li:last-child {
+    border-bottom: 0;
+}
