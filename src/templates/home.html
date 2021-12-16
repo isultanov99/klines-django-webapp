@@ -1,5 +1,26 @@
 {% extends 'base.html' %}
-{% block title %}Главная — Калининградские линии{% endblock %}
+{% block title %}Home — KL{% endblock %}
+{% block form %}
+    <div class="container">
+                <form action="" method="post" autocomplete="off">{% csrf_token %}
+                    <input type="search" id="from_field" class="form-control py-0" placeholder="From" name="from_field"
+                           style="box-shadow: none;">
+                    <input type="search" id="to_field" class="form-control py-0" placeholder="To" name="to_field"
+                           style="box-shadow: none;">
+                    <button type="submit" class="btn btn-primary py-0"
+                            style="box-shadow: none;">Go!
+                    </button>
+                </form>
+    </div>
+{% endblock %}
+{% block tips %}
+<h4>Maps tips:</h4>
+<ul class="separator" id="tips" style="list-style-type: none; padding: 0;">
+    <li>Station names are clickable</li>
+    <li>Map is zoomable and pannable<br>(not for mobile, sorry)</li>
+    <li>Route is shown in own page<br></li>
+</ul>
+{% endblock %}
 {% block content %}
     <div class="col py-3 vh-100 hw-100" data-pan-on-drag="" data-zoom-on-wheel="min-scale: 0.9; max-scale: 200;"
          style="width: 100%; overflow: hidden; height: 100%;">
@@ -546,13 +567,13 @@
             <script type="text/javascript">
         function fill_by_click(clicked_id) {
             var value = document.getElementById(clicked_id).textContent;
-            if (document.getElementById("From").value.length == 0 && document.getElementById("To").value != value)
-                document.getElementById("From").value = value;
-            else if (document.getElementById("To").value == value || (document.getElementById("From").value.length != 0 && document.getElementById("To").value.length != 0)) {
-                document.getElementById("From").value = value;
-                document.getElementById("To").value = "";
-            } else if (document.getElementById("To").value.length == 0 && document.getElementById("From").value != value)
-                document.getElementById("To").value = value;
+            if (document.getElementById("from_field").value.length == 0 && document.getElementById("to_field").value != value)
+                document.getElementById("from_field").value = value;
+            else if (document.getElementById("to_field").value == value || (document.getElementById("from_field").value.length != 0 && document.getElementById("to_field").value.length != 0)) {
+                document.getElementById("from_field").value = value;
+                document.getElementById("to_field").value = "";
+            } else if (document.getElementById("to_field").value.length == 0 && document.getElementById("from_field").value != value)
+                document.getElementById("to_field").value = value;
         }
 </script>
         </svg>

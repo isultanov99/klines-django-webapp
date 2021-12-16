@@ -1,0 +1,1100 @@
+[
+{
+  "model": "auth.permission",
+  "pk": 1,
+  "fields": {
+    "name": "Can add log entry",
+    "content_type": 1,
+    "codename": "add_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 2,
+  "fields": {
+    "name": "Can change log entry",
+    "content_type": 1,
+    "codename": "change_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 3,
+  "fields": {
+    "name": "Can delete log entry",
+    "content_type": 1,
+    "codename": "delete_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 4,
+  "fields": {
+    "name": "Can view log entry",
+    "content_type": 1,
+    "codename": "view_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 5,
+  "fields": {
+    "name": "Can add permission",
+    "content_type": 2,
+    "codename": "add_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 6,
+  "fields": {
+    "name": "Can change permission",
+    "content_type": 2,
+    "codename": "change_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 7,
+  "fields": {
+    "name": "Can delete permission",
+    "content_type": 2,
+    "codename": "delete_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 8,
+  "fields": {
+    "name": "Can view permission",
+    "content_type": 2,
+    "codename": "view_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 9,
+  "fields": {
+    "name": "Can add group",
+    "content_type": 3,
+    "codename": "add_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 10,
+  "fields": {
+    "name": "Can change group",
+    "content_type": 3,
+    "codename": "change_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 11,
+  "fields": {
+    "name": "Can delete group",
+    "content_type": 3,
+    "codename": "delete_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 12,
+  "fields": {
+    "name": "Can view group",
+    "content_type": 3,
+    "codename": "view_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 13,
+  "fields": {
+    "name": "Can add user",
+    "content_type": 4,
+    "codename": "add_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 14,
+  "fields": {
+    "name": "Can change user",
+    "content_type": 4,
+    "codename": "change_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 15,
+  "fields": {
+    "name": "Can delete user",
+    "content_type": 4,
+    "codename": "delete_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 16,
+  "fields": {
+    "name": "Can view user",
+    "content_type": 4,
+    "codename": "view_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 17,
+  "fields": {
+    "name": "Can add content type",
+    "content_type": 5,
+    "codename": "add_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 18,
+  "fields": {
+    "name": "Can change content type",
+    "content_type": 5,
+    "codename": "change_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 19,
+  "fields": {
+    "name": "Can delete content type",
+    "content_type": 5,
+    "codename": "delete_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 20,
+  "fields": {
+    "name": "Can view content type",
+    "content_type": 5,
+    "codename": "view_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 21,
+  "fields": {
+    "name": "Can add session",
+    "content_type": 6,
+    "codename": "add_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 22,
+  "fields": {
+    "name": "Can change session",
+    "content_type": 6,
+    "codename": "change_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 23,
+  "fields": {
+    "name": "Can delete session",
+    "content_type": 6,
+    "codename": "delete_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 24,
+  "fields": {
+    "name": "Can view session",
+    "content_type": 6,
+    "codename": "view_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 25,
+  "fields": {
+    "name": "Can add station",
+    "content_type": 7,
+    "codename": "add_station"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 26,
+  "fields": {
+    "name": "Can change station",
+    "content_type": 7,
+    "codename": "change_station"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 27,
+  "fields": {
+    "name": "Can delete station",
+    "content_type": 7,
+    "codename": "delete_station"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 28,
+  "fields": {
+    "name": "Can view station",
+    "content_type": 7,
+    "codename": "view_station"
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 1,
+  "fields": {
+    "password": "pbkdf2_sha256$260000$X0BG4PUANcpWgMD0X30Adg$hHGj4Iwd2OA69GiC/U1v8hhMPoJQ/AS4K81bLG2gQK0=",
+    "last_login": null,
+    "is_superuser": true,
+    "username": "admin",
+    "first_name": "",
+    "last_name": "",
+    "email": "",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2021-12-10T13:37:45.716Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "stations.station",
+  "pk": "119 км",
+  "fields": {
+    "lat": 55.072265,
+    "lon": 21.783522,
+    "slug": "119-km"
+  }
+},
+{
+  "model": "stations.station",
+  "pk": "1252 км",
+  "fields": {
+    "lat": 54.633167,
+    "lon": 20.982408,
+    "slug": "1252-km"
+  }
+},
+{
+  "model": "stations.station",
+  "pk": "1271 км",
+  "fields": {
+    "lat": 54.638448,
+    "lon": 20.702017,
+    "slug": "1271-km"
+  }
+},
+{
+  "model": "stations.station",
+  "pk": "1298 км",
+  "fields": {
+    "lat": 54.600548,
+    "lon": 20.393451,
+    "slug": "1298-km"
+  }
+},
+{
+  "model": "stations.station",
+  "pk": "13 км",
+  "fields": {
+    "lat": 54.737081,
+    "lon": 20.329378,
+    "slug": "13-km"
+  }
+},
+{
+  "model": "stations.station",
+  "pk": "1305 км",
+  "fields": {
+    "lat": 54.565642,
+    "lon": 20.326226,
+    "slug": "1305-km"
+  }
+},
+{
+  "model": "stations.station",
+  "pk": "1307 км",
+  "fields": {
+    "lat": 54.562658,
+    "lon": 20.284894,
+    "slug": "1307-km"
+  }
+},
+{
+  "model": "stations.station",
+  "pk": "1312 км",
+  "fields": {
+    "lat": 54.572529,
+    "lon": 20.221337,
+    "slug": "1312-km"
+  }
+},
+{
+  "model": "stations.station",
+  "pk": "1333 км",
+  "fields": {
+    "lat": 54.481293,
+    "lon": 19.953925,
+    "slug": "1333-km"
+  }
+},
+{
+  "model": "stations.station",
+  "pk": "18 км",
+  "fields": {
+    "lat": 54.734575,
+    "lon": 20.262856,
+    "slug": "18-km"
+  }
+},
+{
+  "model": "stations.station",
+  "pk": "20 км-Бгрт",
+  "fields": {
+    "lat": 54.53015,
+    "lon": 20.569589,
+    "slug": "20-km-bgrt"
+  }
+},
+{
+  "model": "stations.station",
+  "pk": "20 км-Свет",
+  "fields": {
+    "lat": 54.818479,
+    "lon": 20.280578,
+    "slug": "20-km-svet"
+  }
+},
+{
+  "model": "stations.station",
+  "pk": "21 км",
+  "fields": {
+    "lat": 54.517948,
+    "lon": 20.574672,
+    "slug": "21-km"
+  }
+},
+{
+  "model": "stations.station",
+  "pk": "29 км",
+  "fields": {
+    "lat": 54.740843,
+    "lon": 20.07855,
+    "slug": "29-km"
+  }
+},
+{
+  "model": "stations.station",
+  "pk": "4 км",
+  "fields": {
+    "lat": 54.674011,
+    "lon": 20.531794,
+    "slug": "4-km"
+  }
+},
+{
+  "model": "stations.station",
+  "pk": "45 км",
+  "fields": {
+    "lat": 54.659934,
+    "lon": 19.918587,
+    "slug": "45-km"
+  }
+},
+{
+  "model": "stations.station",
+  "pk": "7 км",
+  "fields": {
+    "lat": 54.801929,
+    "lon": 20.518293,
+    "slug": "7-km"
+  }
+},
+{
+  "model": "stations.station",
+  "pk": "Айвазовский",
+  "fields": {
+    "lat": 54.673215,
+    "lon": 20.569331,
+    "slug": "aivazovskii"
+  }
+},
+{
+  "model": "stations.station",
+  "pk": "Багратионовск",
+  "fields": {
+    "lat": 54.392683,
+    "lon": 20.647702,
+    "slug": "bagrationovsk"
+  }
+},
+{
+  "model": "stations.station",
+  "pk": "Баевка-1",
+  "fields": {
+    "lat": 54.809246,
+    "lon": 20.758207,
+    "slug": "baevka-1"
+  }
+},
+{
+  "model": "stations.station",
+  "pk": "Баевка-2",
+  "fields": {
+    "lat": 54.813126,
+    "lon": 20.795031,
+    "slug": "baevka-2"
+  }
+},
+{
+  "model": "stations.station",
+  "pk": "Балтийск",
+  "fields": {
+    "lat": 54.64453,
+    "lon": 19.896518,
+    "slug": "baltiisk"
+  }
+},
+{
+  "model": "stations.station",
+  "pk": "Богатово",
+  "fields": {
+    "lat": 54.844841,
+    "lon": 21.347318,
+    "slug": "bogatovo"
+  }
+},
+{
+  "model": "stations.station",
+  "pk": "Большаково",
+  "fields": {
+    "lat": 54.882603,
+    "lon": 21.64408,
+    "slug": "bolshakovo"
+  }
+},
+{
+  "model": "stations.station",
+  "pk": "Брусничная",
+  "fields": {
+    "lat": 54.712139,
+    "lon": 20.428049,
+    "slug": "brusnichnaia"
+  }
+},
+{
+  "model": "stations.station",
+  "pk": "Веселовка",
+  "fields": {
+    "lat": 54.588207,
+    "lon": 22.011759,
+    "slug": "veselovka"
+  }
+},
+{
+  "model": "stations.station",
+  "pk": "Владимиров",
+  "fields": {
+    "lat": 54.584792,
+    "lon": 20.56232,
+    "slug": "vladimirov"
+  }
+},
+{
+  "model": "stations.station",
+  "pk": "Гвардейск",
+  "fields": {
+    "lat": 54.635845,
+    "lon": 21.068869,
+    "slug": "gvardeisk"
+  }
+},
+{
+  "model": "stations.station",
+  "pk": "Голубево",
+  "fields": {
+    "lat": 54.615619,
+    "lon": 20.408688,
+    "slug": "golubevo"
+  }
+},
+{
+  "model": "stations.station",
+  "pk": "Гурьевск-1",
+  "fields": {
+    "lat": 54.780377,
+    "lon": 20.587006,
+    "slug": "gurevsk-1"
+  }
+},
+{
+  "model": "stations.station",
+  "pk": "Гурьевск-2",
+  "fields": {
+    "lat": 54.792556,
+    "lon": 20.630278,
+    "slug": "gurevsk-2"
+  }
+},
+{
+  "model": "stations.station",
+  "pk": "Гусев",
+  "fields": {
+    "lat": 54.584923,
+    "lon": 22.198808,
+    "slug": "gusev"
+  }
+},
+{
+  "model": "stations.station",
+  "pk": "Дивное",
+  "fields": {
+    "lat": 54.60561,
+    "lon": 22.400072,
+    "slug": "divnoe"
+  }
+},
+{
+  "model": "stations.station",
+  "pk": "Добрино",
+  "fields": {
+    "lat": 54.813619,
+    "lon": 20.869388,
+    "slug": "dobrino"
+  }
+},
+{
+  "model": "stations.station",
+  "pk": "Дружное",
+  "fields": {
+    "lat": 54.781025,
+    "lon": 20.350344,
+    "slug": "druzhnoe"
+  }
+},
+{
+  "model": "stations.station",
+  "pk": "Залесье",
+  "fields": {
+    "lat": 54.846633,
+    "lon": 21.524559,
+    "slug": "zalese"
+  }
+},
+{
+  "model": "stations.station",
+  "pk": "Западный",
+  "fields": {
+    "lat": 54.710655,
+    "lon": 20.457096,
+    "slug": "zapadnyi"
+  }
+},
+{
+  "model": "stations.station",
+  "pk": "Зеленоградск",
+  "fields": {
+    "lat": 54.95802,
+    "lon": 20.473239,
+    "slug": "zelenogradsk"
+  }
+},
+{
+  "model": "stations.station",
+  "pk": "Знаменка",
+  "fields": {
+    "lat": 54.512081,
+    "lon": 20.00337,
+    "slug": "znamenka"
+  }
+},
+{
+  "model": "stations.station",
+  "pk": "Знаменск",
+  "fields": {
+    "lat": 54.615082,
+    "lon": 21.214875,
+    "slug": "znamensk"
+  }
+},
+{
+  "model": "stations.station",
+  "pk": "Калининград-Северный",
+  "fields": {
+    "lat": 54.721515,
+    "lon": 20.501028,
+    "slug": "kaliningrad-severnyi"
+  }
+},
+{
+  "model": "stations.station",
+  "pk": "Калининград-Южный",
+  "fields": {
+    "lat": 54.693758,
+    "lon": 20.498955,
+    "slug": "kaliningrad-iuzhnyi"
+  }
+},
+{
+  "model": "stations.station",
+  "pk": "Каштановка",
+  "fields": {
+    "lat": 54.868569,
+    "lon": 20.492995,
+    "slug": "kashtanovka"
+  }
+},
+{
+  "model": "stations.station",
+  "pk": "Киевская",
+  "fields": {
+    "lat": 54.682003,
+    "lon": 20.470333,
+    "slug": "kievskaia"
+  }
+},
+{
+  "model": "stations.station",
+  "pk": "Колосовка",
+  "fields": {
+    "lat": 54.801919,
+    "lon": 20.303686,
+    "slug": "kolosovka"
+  }
+},
+{
+  "model": "stations.station",
+  "pk": "Комсомольск",
+  "fields": {
+    "lat": 54.624597,
+    "lon": 20.755409,
+    "slug": "komsomolsk"
+  }
+},
+{
+  "model": "stations.station",
+  "pk": "Константиновка",
+  "fields": {
+    "lat": 54.80712,
+    "lon": 20.68925,
+    "slug": "konstantinovka"
+  }
+},
+{
+  "model": "stations.station",
+  "pk": "Куликово",
+  "fields": {
+    "lat": 54.930067,
+    "lon": 20.323643,
+    "slug": "kulikovo"
+  }
+},
+{
+  "model": "stations.station",
+  "pk": "Кутузово",
+  "fields": {
+    "lat": 54.746389,
+    "lon": 20.532541,
+    "slug": "kutuzovo"
+  }
+},
+{
+  "model": "stations.station",
+  "pk": "Ладушкин",
+  "fields": {
+    "lat": 54.570767,
+    "lon": 20.176925,
+    "slug": "ladushkin"
+  }
+},
+{
+  "model": "stations.station",
+  "pk": "Лесное",
+  "fields": {
+    "lat": 54.728404,
+    "lon": 20.364655,
+    "slug": "lesnoe"
+  }
+},
+{
+  "model": "stations.station",
+  "pk": "Луговое",
+  "fields": {
+    "lat": 54.65211,
+    "lon": 20.62319,
+    "slug": "lugovoe"
+  }
+},
+{
+  "model": "stations.station",
+  "pk": "Люблино",
+  "fields": {
+    "lat": 54.736473,
+    "lon": 20.299572,
+    "slug": "liublino"
+  }
+},
+{
+  "model": "stations.station",
+  "pk": "Малиновка",
+  "fields": {
+    "lat": 54.949606,
+    "lon": 20.440275,
+    "slug": "malinovka"
+  }
+},
+{
+  "model": "stations.station",
+  "pk": "Мамоново",
+  "fields": {
+    "lat": 54.464335,
+    "lon": 19.934739,
+    "slug": "mamonovo"
+  }
+},
+{
+  "model": "stations.station",
+  "pk": "Междуречье",
+  "fields": {
+    "lat": 54.619539,
+    "lon": 21.543814,
+    "slug": "mezhdureche"
+  }
+},
+{
+  "model": "stations.station",
+  "pk": "Мечниково",
+  "fields": {
+    "lat": 54.682575,
+    "lon": 19.93211,
+    "slug": "mechnikovo"
+  }
+},
+{
+  "model": "stations.station",
+  "pk": "Муромское",
+  "fields": {
+    "lat": 54.895004,
+    "lon": 20.48702,
+    "slug": "muromskoe"
+  }
+},
+{
+  "model": "stations.station",
+  "pk": "Нестеров",
+  "fields": {
+    "lat": 54.628826,
+    "lon": 22.578809,
+    "slug": "nesterov"
+  }
+},
+{
+  "model": "stations.station",
+  "pk": "Озерки",
+  "fields": {
+    "lat": 54.630507,
+    "lon": 20.895491,
+    "slug": "ozerki"
+  }
+},
+{
+  "model": "stations.station",
+  "pk": "Отважное",
+  "fields": {
+    "lat": 54.616706,
+    "lon": 20.549753,
+    "slug": "otvazhnoe"
+  }
+},
+{
+  "model": "stations.station",
+  "pk": "Пастухово",
+  "fields": {
+    "lat": 54.614858,
+    "lon": 21.653461,
+    "slug": "pastukhovo"
+  }
+},
+{
+  "model": "stations.station",
+  "pk": "Переславское",
+  "fields": {
+    "lat": 54.840652,
+    "lon": 20.252111,
+    "slug": "pereslavskoe"
+  }
+},
+{
+  "model": "stations.station",
+  "pk": "Петино",
+  "fields": {
+    "lat": 54.839817,
+    "lon": 21.276894,
+    "slug": "petino"
+  }
+},
+{
+  "model": "stations.station",
+  "pk": "Пионерский Курорт",
+  "fields": {
+    "lat": 54.949136,
+    "lon": 20.225338,
+    "slug": "pionerskii-kurort"
+  }
+},
+{
+  "model": "stations.station",
+  "pk": "Полесск",
+  "fields": {
+    "lat": 54.855486,
+    "lon": 21.10068,
+    "slug": "polessk"
+  }
+},
+{
+  "model": "stations.station",
+  "pk": "Приморск",
+  "fields": {
+    "lat": 54.732142,
+    "lon": 20.003703,
+    "slug": "primorsk"
+  }
+},
+{
+  "model": "stations.station",
+  "pk": "Приморское",
+  "fields": {
+    "lat": 54.543898,
+    "lon": 20.058653,
+    "slug": "primorskoe"
+  }
+},
+{
+  "model": "stations.station",
+  "pk": "Приморье",
+  "fields": {
+    "lat": 54.950535,
+    "lon": 20.454158,
+    "slug": "primore"
+  }
+},
+{
+  "model": "stations.station",
+  "pk": "Пушкарево",
+  "fields": {
+    "lat": 54.621909,
+    "lon": 21.379511,
+    "slug": "pushkarevo"
+  }
+},
+{
+  "model": "stations.station",
+  "pk": "Ржевское",
+  "fields": {
+    "lat": 55.073669,
+    "lon": 21.72743,
+    "slug": "rzhevskoe"
+  }
+},
+{
+  "model": "stations.station",
+  "pk": "Романово",
+  "fields": {
+    "lat": 54.897982,
+    "lon": 20.238846,
+    "slug": "romanovo"
+  }
+},
+{
+  "model": "stations.station",
+  "pk": "Рощино",
+  "fields": {
+    "lat": 54.92881,
+    "lon": 20.362897,
+    "slug": "roshchino"
+  }
+},
+{
+  "model": "stations.station",
+  "pk": "Рябиновка",
+  "fields": {
+    "lat": 54.827468,
+    "lon": 20.507348,
+    "slug": "riabinovka"
+  }
+},
+{
+  "model": "stations.station",
+  "pk": "Светлогорск-1",
+  "fields": {
+    "lat": 54.933378,
+    "lon": 20.16071,
+    "slug": "svetlogorsk-1"
+  }
+},
+{
+  "model": "stations.station",
+  "pk": "Светлогорск-2",
+  "fields": {
+    "lat": 54.944111,
+    "lon": 20.14682,
+    "slug": "svetlogorsk-2"
+  }
+},
+{
+  "model": "stations.station",
+  "pk": "Светлое",
+  "fields": {
+    "lat": 54.578993,
+    "lon": 20.356141,
+    "slug": "svetloe"
+  }
+},
+{
+  "model": "stations.station",
+  "pk": "Сельма",
+  "fields": {
+    "lat": 54.739533,
+    "lon": 20.483441,
+    "slug": "selma"
+  }
+},
+{
+  "model": "stations.station",
+  "pk": "Славск",
+  "fields": {
+    "lat": 55.043137,
+    "lon": 21.659735,
+    "slug": "slavsk"
+  }
+},
+{
+  "model": "stations.station",
+  "pk": "Славянское",
+  "fields": {
+    "lat": 54.83922,
+    "lon": 20.974458,
+    "slug": "slavianskoe"
+  }
+},
+{
+  "model": "stations.station",
+  "pk": "Советск",
+  "fields": {
+    "lat": 55.082759,
+    "lon": 21.879656,
+    "slug": "sovetsk"
+  }
+},
+{
+  "model": "stations.station",
+  "pk": "Сокольники-1",
+  "fields": {
+    "lat": 54.943536,
+    "lon": 20.413334,
+    "slug": "sokolniki-1"
+  }
+},
+{
+  "model": "stations.station",
+  "pk": "Сокольники-2",
+  "fields": {
+    "lat": 54.938916,
+    "lon": 20.396884,
+    "slug": "sokolniki-2"
+  }
+},
+{
+  "model": "stations.station",
+  "pk": "Сосновка",
+  "fields": {
+    "lat": 54.93316,
+    "lon": 20.490004,
+    "slug": "sosnovka"
+  }
+},
+{
+  "model": "stations.station",
+  "pk": "Сосновый Бор",
+  "fields": {
+    "lat": 54.556916,
+    "lon": 20.113188,
+    "slug": "sosnovyi-bor"
+  }
+},
+{
+  "model": "stations.station",
+  "pk": "Стрельня",
+  "fields": {
+    "lat": 54.507348,
+    "lon": 20.582091,
+    "slug": "strelnia"
+  }
+},
+{
+  "model": "stations.station",
+  "pk": "Чернышевское",
+  "fields": {
+    "lat": 54.636907,
+    "lon": 22.734524,
+    "slug": "chernyshevskoe"
+  }
+},
+{
+  "model": "stations.station",
+  "pk": "Черняховск",
+  "fields": {
+    "lat": 54.628576,
+    "lon": 21.818842,
+    "slug": "cherniakhovsk"
+  }
+},
+{
+  "model": "stations.station",
+  "pk": "Чкаловск",
+  "fields": {
+    "lat": 54.764818,
+    "lon": 20.445629,
+    "slug": "chkalovsk"
+  }
+},
+{
+  "model": "stations.station",
+  "pk": "Шиповка",
+  "fields": {
+    "lat": 54.740995,
+    "lon": 20.187848,
+    "slug": "shipovka"
+  }
+},
+{
+  "model": "stations.station",
+  "pk": "Шолохово",
+  "fields": {
+    "lat": 54.84274,
+    "lon": 21.210077,
+    "slug": "sholokhovo"
+  }
+},
+{
+  "model": "stations.station",
+  "pk": "Щегловка",
+  "fields": {
+    "lat": 55.079213,
+    "lon": 21.650432,
+    "slug": "shcheglovka"
+  }
+}
+]

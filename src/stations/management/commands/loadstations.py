@@ -13,13 +13,16 @@ class Command(BaseCommand):
         parser.add_argument('--path', type=str)
 
     def handle(self, *args, **kwargs):
+        i = 1
         path = kwargs['path']
         with open(path, 'rt') as f:
             reader = csv.reader(f, dialect='excel')
             for row in reader:
                 Station.objects.create(
-                    name=(row[0]),
+                    id=i,
+                    name=row[0],
                     lat=row[1],
                     lon=row[2],
                     slug=slugify(row[0])
                 )
+                i += 1

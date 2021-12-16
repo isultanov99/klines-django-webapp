@@ -1,0 +1,61 @@
+{% extends 'base.html' %}
+{% block title %}Trains - KL{% endblock %}
+{% load index %}
+{% block tips %}
+    <h4>Train list tips:</h4>
+    <ul class="separator" id="tips" style="list-style-type: none; padding: 0;">
+        <li>Click:</li>
+        <li>Train number for detail page</li>
+        <li>Station for station page</li>
+    </ul>
+{% endblock %}
+{% block content %}
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link href="https://unpkg.com/bootstrap-table@1.19.1/dist/bootstrap-table.min.css" rel="stylesheet">
+
+    <script src="https://unpkg.com/bootstrap-table@1.19.1/dist/bootstrap-table.min.js"></script>
+    <script src="https://unpkg.com/bootstrap-table@1.19.1/dist/extensions/filter-control/bootstrap-table-filter-control.min.js"></script>
+    <div class="col py-1" style="overflow-y: auto; height: 100vh;">
+        <table class="table table-striped"
+               id="table" data-sortable="true">
+            <thead>
+            <th data-field="name">Number</th>
+            <th data-field="name">Line</th>
+            <th data-field="name">From</th>
+            <th data-field="name"><abbr title="Departs">Dep</abbr></th>
+            <th data-field="name">To</th>
+            <th data-field="name"><abbr title="Arrives">Arr</abbr></th>
+            <th data-field="name">Runs on</th>
+            </thead>
+            <tbody>
+            {% for objects in trains_list %}
+                <tr>
+                    <td><a href="/trains/{{ objects.num }}" style="text-decoration: none">{{ objects.num }}</a></td>
+                    <td>
+                            <i class="bi bi-circle-fill" style="color:{{ objects.line.color }}"></i>
+                            <a style="font-weight:bold;color:{{ objects.line.color }}">{{ objects.line.name }}</a>
+                    </td>
+                    <td><a href="/stations/{{ objects.from_station.slug }}"
+                           style="text-decoration: none">{{ objects.from_station.name }}</a></td>
+                    <td>{% keys_to_list objects.timetable as time %}{{ time.0 }}</td>
+                    <td><a href="/stations/{{ objects.to_station.slug }}"
+                           style="text-decoration: none">{{ objects.to_station.name }}</a></td>
+                    <td>{{ time|last }}</td>
+                    <td>
+                        {% for day in objects.days %}
+                            {% if weekday|indexone:day == "Sa" or weekday|indexone:day == "Su" %}
+                                <a style="color: #e30a0a">{{ weekday | indexone:day }}</a>
+                            {% else %}
+                                <a>{{ weekday | indexone:day }}</a>
+                            {% endif %}
+                        {% endfor %}
+                    </td>
+                </tr>
+
+            {% endfor %}
+
+            </tbody>
+        </table>
+    </div>
+{% endblock %}

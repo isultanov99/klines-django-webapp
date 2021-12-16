@@ -20,8 +20,9 @@ from . import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.home),
-    path('route/<first_param>/<second_param>', views.match),
-    path('stations/', include(('stations.urls', 'stations')))
+    path('route/<first_param>/<second_param>', views.route, name="route"),
+    path('stations/', include(('stations.urls', 'stations'))),
+    path('trains/', include(('trains.urls', 'trains'))),
 ]
 
 handler404 = views.page_not_found_view

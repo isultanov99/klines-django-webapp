@@ -172,6 +172,7 @@ cython_debug/
 .idea/**/dataSources.local.xml
 .idea/**/sqlDataSources.xml
 .idea/**/dynamic.xml
+.idea/encodings.xml
 .idea/**/uiDesigner.xml
 .idea/**/dbnavigator.xml
 

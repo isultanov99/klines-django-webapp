@@ -1,9 +1,67 @@
-{% extends 'stations/base.html' %}
+{% extends 'base.html' %}
 {% block title %}{{ object.name }} - Калининградские линии{% endblock %}
-
+{% block tips %}
+    <h4>Station list tips:</h4>
+    <ul class="separator" id="tips" style="list-style-type: none; padding: 0;">
+        <li>Timetable doesn't show train<br>if this station is last stop</li>
+        <li>Search works with<br>both latin and cyrillic</li>
+        <li>Row click gives details page</li>
+        <li>Did you see <a href="/404">404</a> page?<br>You'll love it</li>
+    </ul>
+{% endblock %}
 {% block content %}
-     <div class="col vh-100 hw-100 overflow-hidden">
-        <h3>{{ object.name }}</h3>
-        <div>{{ my_map |safe }}</div>
+    {% load index %}
+    <div class="col py-1 vh-100 hw-90 overflow-hidden">
+        <h4>
+            {{ object.name }}
+            {% for line in object.line.all %}
+                <i class="bi bi-circle-fill" style="color:{{ line.color }}"></i>
+                <a style="font-weight:bold;color:{{ line.color }}">{{ line.name }}</a>
+            {% endfor %}
+        </h4>
+        <div class="col py-1" style="overflow-y: auto;max-height: 40vh;">
+            <table class="table table-striped"
+                   id="table" data-sortable="true">
+                <thead>
+                <th data-field="name">Number</th>
+                <th data-field="name">Line</th>
+                <th data-field="name">From</th>
+                <th data-field="name"><abbr title="Departs">Dep</abbr></th>
+                <th data-field="name">To</th>
+                <th data-field="name"><abbr title="Arrives">Arr</abbr></th>
+                <th data-field="name">Runs on</th>
+                </thead>
+                <tbody>
+                {% find_train object as trains_list %}
+                {% for objects in trains_list %}
+                    <tr>
+                        <td><a href="/trains/{{ objects.num }}" style="text-decoration: none">{{ objects.num }}</a></td>
+                        <td>
+                            <i class="bi bi-circle-fill" style="color:{{ objects.line.color }}"></i>
+                            <a style="font-weight:bold;color:{{ objects.line.color }}">{{ objects.line.name }}</a>
+                        </td>
+                        <td><a href="/stations/{{ object.slug }}"
+                               style="text-decoration: none">{{ object.name }}</a></td>
+                        <td>{% station_time object objects %}</td>
+                        <td><a href="/stations/{{ objects.to_station.slug }}"
+                               style="text-decoration: none">{{ objects.to_station.name }}</a></td>
+                        <td>{% station_time objects.to_station objects %}</td>
+                        <td>
+                            {% for day in objects.days %}
+                                {% if weekday|indexone:day == "Sa" or weekday|indexone:day == "Su" %}
+                                    <a style="color: #e30a0a">{{ weekday | indexone:day }}</a>
+                                {% else %}
+                                    <a>{{ weekday | indexone:day }}</a>
+                                {% endif %}
+                            {% endfor %}
+                        </td>
+                    </tr>
+
+                {% endfor %}
+
+                </tbody>
+            </table>
+        </div>
+        <div style="width: 40vw !important;">{{ my_map |safe }}</div>
     </div>
 {% endblock %}

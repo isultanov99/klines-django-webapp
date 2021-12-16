@@ -1,3 +1,4 @@
 Django==3.2.9
-folium==0.12.1.post1
+folium==0.12.1
 python-slugify==5.0.2
+mysqlclient==2.1.0

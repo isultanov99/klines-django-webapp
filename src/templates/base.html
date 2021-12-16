@@ -21,32 +21,25 @@
         <div class="col-auto px-0 bg-light vh-100">
             <div class="d-flex flex-column text-white">
                 <a href="/"
-                   class="nav-link align-middle d-flex justify-content-center text-black border-bottom">
+                   class="nav-link align-middle d-flex justify-content-middle text-black border-bottom">
                     <img src="{% static 'KLlogo.svg' %}" aria-label="Калининградские Линии" alt="Калининградские линии">
                 </a>
                 <a href="/stations/"
-                   class="nav-link align-middle d-flex justify-content-center text-blue border-bottom">
-                    <span class="fs-2 bi-card-list ms-1 d-none d-sm-inline">Stations list</span>
+                   class="nav-link align-middle d-flex justify-content-start text-blue border-bottom">
+                    <span class="material-icons">location_city</span>
+                    <span class="ms-1 d-none d-sm-inline">Stations list</span>
+                </a>
+                <a href="/trains/"
+                   class="nav-link align-middle d-flex justify-content-start text-blue border-bottom">
+                    <span class="material-icons">directions_transit</span>
+                    <span class="ms-1 d-none d-sm-inline">Trains list</span>
                 </a>
             </div>
             <br>
-            <div class="container">
-                <input type="search" id="From" class="form-control" placeholder="From" aria-label="From"
-                       style="box-shadow: none;">
-                <input type="search" id="To" class="form-control" placeholder="To" aria-label="To"
-                       style="box-shadow: none;">
-                <button type="button" class="btn btn-primary" href="route/{{ i.col1 }}/{{ i.col2 }}"
-                        style="box-shadow: none;">Go!
-                </button>
-            </div>
+            {% block form %}{% endblock %}
             <div class="container">
                 <br>
-                <h4>Maps tips:</h4>
-                <ul class="separator" id="tips" style="list-style-type: none; padding: 0;">
-                    <li>Station names are clickable</li>
-                    <li>Map is zoomable and pannable<br>(not for mobile, sorry)</li>
-                    <li>Route is shown in own page<br>(On-map route will be later)<br>(not)</li>
-                </ul>
+                {% block tips %}{% endblock %}
             </div>
         </div>
         {% block content %}{% endblock %}
