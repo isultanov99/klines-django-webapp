@@ -14,10 +14,10 @@ def detail(request, slug):
     m = m._repr_html_()
     context = {'my_map': m, 'object': station, 'weekday': ["Mo", "Tu", "We", "Th", "Fr", "Sa", "Su"],
                'trains_list': Train.objects.all()}
-    return render(request, 'stations/../templates/stations/detail', context)
+    return render(request, '../templates/stations/detail.html', context)
 
 
 def stations_list(request):
     qs = Station.objects.all()
     context = {'objects_list': qs}
-    return render(request, 'stations/../templates/stations/list', context)
+    return render(request, '../templates/stations/list.html', context)
