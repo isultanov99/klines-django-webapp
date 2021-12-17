@@ -28,5 +28,5 @@ def home(request):
 def route(request, first_param=None, second_param=None):
     context = {"first_param": Station.objects.get(slug=first_param),
                "second_param": Station.objects.get(slug=second_param),
-               "trains": Train.objects.all(), "weekday": ["Mo", "Tu", "We", "Th", "Fr", "Sa", "Su"]}
+               "trains": Train.objects.all(), "weekday": ["Пн", "Вт", "Ср", "Чт", "Пт", "Сб", "Вс"]}
     return render(request, '../templates/route.html', context)

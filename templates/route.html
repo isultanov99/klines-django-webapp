@@ -2,17 +2,16 @@
 {% load index %}
 {% block title %}{{ first_param }} - {{ second_param }}{% endblock %}
 {% block tips %}
-    <h4>Route page tips:</h4>
+    <h4>Клик по:</h4>
     <ul class="separator" id="tips" style="list-style-type: none; padding: 0;">
-        <li>Click:</li>
-        <li>Arrow to swap stations</li>
-        <li>Train number for detail page</li>
-        <li>Station for station page</li>
+        <li>Стрелке для перемены станций</li>
+        <li>№ поезда для его расписания</li>
+        <li>Станции для карты и<br>проходящих поездов</li>
     </ul>
 {% endblock %}
 {% block content %}
     <div div class="col py-1 vh-100 hw-100">
-        <h4 style="font-family:'PT Mono'">Route:<br>
+        <h4 style="font-family:'PT Mono'">Маршрут:<br>
             <a href="/stations/{{ first_param.slug }}" style="text-decoration: none">{{ first_param.name }}</a>
             {% for line in first_param.line.all %}
                 <i class="bi bi-circle-fill" style="color:{{ line.color }}"></i>
@@ -36,14 +35,14 @@
                 <table class="table table-striped"
                        id="table" data-sortable="true">
                     <thead>
-                    <th>Number</th>
-                    <th>Line</th>
-                    <th>From</th>
-                    <th><abbr title="Departs">Dep</abbr></th>
-                    <th>To</th>
-                    <th><abbr title="Arrives">Arr</abbr></th>
-                    <th><abbr title="Transit time">Time</abbr></th>
-                    <th>Runs on</th>
+                    <th>Номер</th>
+                    <th>Линия</th>
+                    <th>Отпр.</th>
+                    <th></th>
+                    <th>Приб.</th>
+                    <th></th>
+                    <th>В пути</th>
+                    <th>Дни недели</th>
                     </thead>
                     <tbody>
                     {% for objects in trains_list %}
@@ -94,14 +93,14 @@
                 <table class="table table-striped"
                        id="table" data-sortable="true">
                     <thead>
-                    <th>Number</th>
-                    <th>Line</th>
-                    <th>From</th>
-                    <th><abbr title="Departs">Dep</abbr></th>
-                    <th>To</th>
-                    <th><abbr title="Arrives">Arr</abbr></th>
-                    <th><abbr title="Transit time">Time</abbr></th>
-                    <th>Runs on</th>
+                    <th>Номер</th>
+                    <th>Линия</th>
+                    <th>Отпр.</th>
+                    <th></th>
+                    <th>Приб.</th>
+                    <th></th>
+                    <th>В пути</th>
+                    <th>Дни недели</th>
                     </thead>
                     <tbody>
                     {% get_station 42 as kalin %}
@@ -147,8 +146,9 @@
                     </tbody>
                 </table>
             </div>
+            <br>
             <h4>
-                <i class="bi bi-shuffle"></i> <a href="/stations/{{ kalin.slug }}"
+                Пересадка:<br><a href="/stations/{{ kalin.slug }}"
                                                  style="text-decoration: none">{{ kalin.name }}</a>
                 {% for line in kalin.line.all %}
                     <i class="bi bi-circle-fill" style="color:{{ line.color }}"></i>
@@ -159,14 +159,14 @@
                 <table class="table table-striped"
                        id="table" data-sortable="true">
                     <thead>
-                    <th>Number</th>
-                    <th>Line</th>
-                    <th>From</th>
-                    <th><abbr title="Departs">Dep</abbr></th>
-                    <th>To</th>
-                    <th><abbr title="Arrives">Arr</abbr></th>
-                    <th><abbr title="Transit time">Time</abbr></th>
-                    <th>Runs on</th>
+                    <th>Номер</th>
+                    <th>Линия</th>
+                    <th>Отпр.</th>
+                    <th></th>
+                    <th>Приб.</th>
+                    <th></th>
+                    <th>В пути</th>
+                    <th>Дни недели</th>
                     </thead>
                     <tbody>
                     {% find_train kalin second_param as trains_list %}

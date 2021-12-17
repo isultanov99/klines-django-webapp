@@ -1,24 +1,25 @@
 {% extends 'base.html' %}
-{% block title %}Home — KL{% endblock %}
+{% block title %}Калининградские линии{% endblock %}
 {% block form %}
     <div class="container">
                 <form action="" method="post" autocomplete="off">{% csrf_token %}
-                    <input type="search" id="from_field" class="form-control py-0" placeholder="From" name="from_field"
+                    <input type="search" id="from_field" class="form-control py-0" placeholder="Откуда" name="from_field"
                            style="box-shadow: none;">
-                    <input type="search" id="to_field" class="form-control py-0" placeholder="To" name="to_field"
+                    <input type="search" id="to_field" class="form-control py-0" placeholder="Куда" name="to_field"
                            style="box-shadow: none;">
                     <button type="submit" class="btn btn-primary py-0"
-                            style="box-shadow: none;">Go!
+                            style="box-shadow: none;">Поехали!
                     </button>
                 </form>
     </div>
 {% endblock %}
 {% block tips %}
-<h4>Maps tips:</h4>
+<h4>Подсказки:</h4>
 <ul class="separator" id="tips" style="list-style-type: none; padding: 0;">
-    <li>Station names are clickable</li>
-    <li>Map is zoomable and pannable<br>(not for mobile, sorry)</li>
-    <li>Route is shown in own page<br></li>
+    <li>Названия станций кликабельны</li>
+    <li>Схема увеличивается</li>
+    <li>Мобильный вид не доступен</li>
+
 </ul>
 {% endblock %}
 {% block content %}

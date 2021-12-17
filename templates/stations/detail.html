@@ -1,12 +1,11 @@
 {% extends 'base.html' %}
 {% block title %}{{ object.name }} - Калининградские линии{% endblock %}
 {% block tips %}
-    <h4>Station list tips:</h4>
+    <h4>Станция:</h4>
     <ul class="separator" id="tips" style="list-style-type: none; padding: 0;">
-        <li>Timetable doesn't show train<br>if this station is last stop</li>
-        <li>Search works with<br>both latin and cyrillic</li>
-        <li>Row click gives details page</li>
-        <li>Did you see <a href="/404">404</a> page?<br>You'll love it</li>
+        <li>Расписание не покажет поезд,<br>если это конечная</li>
+        <li>Если поезд сегодня не ходит,<br>то он тусклее</li>
+        <li>Клик по номеру или названию <br>переведёт на страницы</li>
     </ul>
 {% endblock %}
 {% block content %}
@@ -23,13 +22,13 @@
             <table class="table table-striped"
                    id="table" data-sortable="true">
                 <thead>
-                <th data-field="name">Number</th>
-                <th data-field="name">Line</th>
-                <th data-field="name">From</th>
-                <th data-field="name"><abbr title="Departs">Dep</abbr></th>
-                <th data-field="name">To</th>
-                <th data-field="name"><abbr title="Arrives">Arr</abbr></th>
-                <th data-field="name">Runs on</th>
+                    <th>Номер</th>
+                    <th>Линия</th>
+                    <th>Отпр.</th>
+                    <th></th>
+                    <th>Приб.</th>
+                    <th></th>
+                    <th>Дни недели</th>
                 </thead>
                 <tbody>
                 {% find_train object as trains_list %}

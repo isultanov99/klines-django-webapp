@@ -10,7 +10,7 @@ def detail(request, slug):
                    min_lon=station.__dict__.get('lon') - 0.03, max_lon=station.__dict__.get('lon') + 0.03,
                    zoom_start=17, max_zoom=18, min_zoom=13)  # updated
     m = m._repr_html_()
-    context = {'my_map': m, 'object': station, 'weekday': ["Mo", "Tu", "We", "Th", "Fr", "Sa", "Su"],
+    context = {'my_map': m, 'object': station, 'weekday': ["Пн", "Вт", "Ср", "Чт", "Пт", "Сб", "Вс"],
                'trains_list': Train.objects.all()}
     return render(request, '../templates/stations/detail.html', context)
 

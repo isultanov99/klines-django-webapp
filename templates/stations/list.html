@@ -1,11 +1,11 @@
 {% extends 'base.html' %}
-{% block title %}Stations list - KL{% endblock %}
+{% block title %}Станции - КЛ{% endblock %}
 {% block tips %}
-    <h4>Station list tips:</h4>
+    <h4>Станции:</h4>
     <ul class="separator" id="tips" style="list-style-type: none; padding: 0;">
-        <li>Search works with<br>both latin and cyrillic</li>
-        <li>Row click gives details page</li>
-        <li>Did you see <a href="/404">404</a> page?<br>You'll love it</li>
+        <li>Поиск работает и с латиницей</li>
+        <li>Клик по имени даст страницу <br>c картой и поездами</li>
+        <li>А вот красивая <a href="/404">404</a> страница</li>
     </ul>
 {% endblock %}
 {% block content %}
@@ -20,8 +20,8 @@
                id="table"
                data-search="true">
             <thead>
-            <th data-field="name">Name</th>
-            <th data-field="line">Line</th>
+            <th data-field="name">Название</th>
+            <th data-field="line">Линии</th>
             </thead>
             <tbody>
             {% for objects in objects_list %}
