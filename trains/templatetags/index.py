@@ -1,7 +1,8 @@
-from django import template
-from stations.models import *
-from trains.models import *
 from datetime import datetime
+
+from django import template
+
+from trains.models import *
 
 register = template.Library()
 
@@ -68,10 +69,14 @@ def station_time(st, tr):
 def today(days):
     return (datetime.today().weekday() + 1) in days
 
-def past(time):
-    datetime
+
+@register.simple_tag
+def get_station(n):
+    return Station.objects.get(id=n)
+
+
 @register.simple_tag
 def day_color(num):
-    if datetime.today().weekday() == num:
+    if datetime.today().weekday() + 1 == num:
         return True
     return False

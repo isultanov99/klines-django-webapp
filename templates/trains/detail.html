@@ -11,11 +11,13 @@
 {% endblock %}
 {% block content %}
     <div class="col py-1 vh-100 hw-100">
-        <h4 style="display:inline;font-weight:bold;color: {{ object.line.color }}"><i class="bi bi-circle-fill"></i> {{ object.line }} </h4>
-        <h4 style="display:inline;">line train № {{ object.num }} from {{ object.from_station.name }} to {{ object.to_station.name }}</h4>
+        <h4 style="display:inline;font-weight:bold;color: {{ object.line.color }}"><i
+                class="bi bi-circle-fill"></i> {{ object.line }} </h4>
+        <h4 style="display:inline;">line train № {{ object.num }} from {{ object.from_station.name }}
+            to {{ object.to_station.name }}</h4>
         <h4>Runs on {% for day in object.days %}
             {% if weekday|indexone:day == "Sa" or weekday|indexone:day == "Su" %}
-                <a style="color: #e30a0a; font-weight: bold">{{ weekday | indexone:day }}</a>
+                <a style="color: #e30a0a">{{ weekday | indexone:day }}</a>
             {% else %}
                 <a style="color: darkblue">{{ weekday | indexone:day }}</a>
             {% endif %}

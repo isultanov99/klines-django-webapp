@@ -42,7 +42,7 @@
                     <th><abbr title="Departs">Dep</abbr></th>
                     <th>To</th>
                     <th><abbr title="Arrives">Arr</abbr></th>
-                    <th><abbr title="Transit time">Time</th>
+                    <th><abbr title="Transit time">Time</abbr></th>
                     <th>Runs on</th>
                     </thead>
                     <tbody>
@@ -86,6 +86,128 @@
 
                     {% endfor %}
 
+                    </tbody>
+                </table>
+            </div>
+        {% elif not sl %}
+            <div style="overflow-y: auto; max-height: 30vh;">
+                <table class="table table-striped"
+                       id="table" data-sortable="true">
+                    <thead>
+                    <th>Number</th>
+                    <th>Line</th>
+                    <th>From</th>
+                    <th><abbr title="Departs">Dep</abbr></th>
+                    <th>To</th>
+                    <th><abbr title="Arrives">Arr</abbr></th>
+                    <th><abbr title="Transit time">Time</abbr></th>
+                    <th>Runs on</th>
+                    </thead>
+                    <tbody>
+                    {% get_station 42 as kalin %}
+                    {% find_train first_param kalin as trains_list %}
+                    {% for objects in trains_list %}
+                        {% today objects.days as tt %}
+                        <tr {% if not tt %} style="opacity: 0.5"{% endif %}>
+                            <td><a href="/trains/{{ objects.num }}" style="text-decoration: none">{{ objects.num }}</a>
+                            </td>
+                            <td>
+                                <i class="bi bi-circle-fill" style="color:{{ objects.line.color }}"></i>
+                                <a style="font-weight:bold;color:{{ objects.line.color }}">{{ objects.line.name }}</a>
+                            </td>
+                            <td><a href="/stations/{{ first_param.slug }}"
+                                   style="text-decoration: none">{{ first_param.name }}</a></td>
+                            {% station_time first_param objects as t1 %}
+                            <td>{{ t1 }}</td>
+                            <td><a href="/stations/{{ kalin.slug }}"
+                                   style="text-decoration: none">{{ kalin.name }}</a></td>
+                            {% station_time kalin objects as t2 %}
+                            <td>{{ t2 }}</td>
+                            <td>{% time_delta t1 t2 %} min</td>
+                            <td>
+                                {% for day in objects.days %}
+                                    {% day_color day as today %}
+                                    {% if weekday|indexone:day == "Sa" or weekday|indexone:day == "Su" %}
+                                        {% if today == True %}
+                                            <a style="color: #e30a0a; font-weight: bold">{{ weekday | indexone:day }}</a>
+                                        {% else %}
+                                            <a style="color: #ff6464">{{ weekday | indexone:day }}</a>
+                                        {% endif %}
+                                    {% else %}
+                                        {% if today == True %}
+                                            <a style="font-weight: bold">{{ weekday | indexone:day }}</a>
+                                        {% else %}
+                                            <a style="color: #a2a2a2">{{ weekday | indexone:day }}</a>
+                                        {% endif %}
+                                    {% endif %}
+                                {% endfor %}
+                            </td>
+                        </tr>
+                    {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+            <h4>
+                <i class="bi bi-shuffle"></i> <a href="/stations/{{ kalin.slug }}"
+                                                 style="text-decoration: none">{{ kalin.name }}</a>
+                {% for line in kalin.line.all %}
+                    <i class="bi bi-circle-fill" style="color:{{ line.color }}"></i>
+                    <a style="font-weight:bold;color:{{ line.color }}">{{ line.name }}</a>
+                {% endfor %}
+            </h4>
+            <div style="overflow-y: auto; max-height: 30vh;">
+                <table class="table table-striped"
+                       id="table" data-sortable="true">
+                    <thead>
+                    <th>Number</th>
+                    <th>Line</th>
+                    <th>From</th>
+                    <th><abbr title="Departs">Dep</abbr></th>
+                    <th>To</th>
+                    <th><abbr title="Arrives">Arr</abbr></th>
+                    <th><abbr title="Transit time">Time</abbr></th>
+                    <th>Runs on</th>
+                    </thead>
+                    <tbody>
+                    {% find_train kalin second_param as trains_list %}
+                    {% for objects in trains_list %}
+                        {% today objects.days as tt %}
+                        <tr {% if not tt %} style="opacity: 0.5"{% endif %}>
+                            <td><a href="/trains/{{ objects.num }}" style="text-decoration: none">{{ objects.num }}</a>
+                            </td>
+                            <td>
+                                <i class="bi bi-circle-fill" style="color:{{ objects.line.color }}"></i>
+                                <a style="font-weight:bold;color:{{ objects.line.color }}">{{ objects.line.name }}</a>
+                            </td>
+                            <td><a href="/stations/{{ kalin.slug }}"
+                                   style="text-decoration: none">{{ kalin.name }}</a></td>
+                            {% station_time kalin objects as t1 %}
+                            <td>{{ t1 }}</td>
+                            <td><a href="/stations/{{ second_param.slug }}"
+                                   style="text-decoration: none">{{ second_param.name }}</a></td>
+                            {% station_time second_param objects as t2 %}
+                            <td>{{ t2 }}</td>
+                            <td>{% time_delta t1 t2 %} min</td>
+                            <td>
+                                {% for day in objects.days %}
+                                    {% day_color day as today %}
+                                    {% if weekday|indexone:day == "Sa" or weekday|indexone:day == "Su" %}
+                                        {% if today == True %}
+                                            <a style="color: #e30a0a; font-weight: bold">{{ weekday | indexone:day }}</a>
+                                        {% else %}
+                                            <a style="color: #ff6464">{{ weekday | indexone:day }}</a>
+                                        {% endif %}
+                                    {% else %}
+                                        {% if today == True %}
+                                            <a style="font-weight: bold">{{ weekday | indexone:day }}</a>
+                                        {% else %}
+                                            <a style="color: #a2a2a2">{{ weekday | indexone:day }}</a>
+                                        {% endif %}
+                                    {% endif %}
+                                {% endfor %}
+                            </td>
+                        </tr>
+                    {% endfor %}
                     </tbody>
                 </table>
             </div>
