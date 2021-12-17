@@ -1,1 +1,1 @@
-web: gunicorn klines.wsgi
+web: gunicorn klines.wsgi --bind 0.0.0.0:$PORT klines:app
