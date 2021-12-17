@@ -31,7 +31,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent.parent
 SECRET_KEY = 'l3=hq36gvq8w=1hfoi0zg_j37xe$@q(uvx_s@gbgcops-@&ytj'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['klines.herokuapp.com']
 
