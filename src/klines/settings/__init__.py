@@ -1,5 +1,5 @@
 from .production import *
 try:
-    from .settings_local import *
+    from .local_settings import *
 except ImportError:
     pass
