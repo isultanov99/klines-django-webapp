@@ -62,3 +62,16 @@ def find_train(st1, st2=None):
 @register.simple_tag
 def station_time(st, tr):
     return list(tr.timetable.keys())[list(tr.timetable.values()).index(str(st.id))]
+
+
+@register.simple_tag
+def today(days):
+    return (datetime.today().weekday() + 1) in days
+
+def past(time):
+    datetime
+@register.simple_tag
+def day_color(num):
+    if datetime.today().weekday() == num:
+        return True
+    return False

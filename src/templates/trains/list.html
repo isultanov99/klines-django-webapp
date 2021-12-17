@@ -30,11 +30,12 @@
             </thead>
             <tbody>
             {% for objects in trains_list %}
-                <tr>
+                {% today objects.days as tt %}
+                <tr {% if not tt %} style="opacity: 0.5"{% endif %}>
                     <td><a href="/trains/{{ objects.num }}" style="text-decoration: none">{{ objects.num }}</a></td>
                     <td>
-                            <i class="bi bi-circle-fill" style="color:{{ objects.line.color }}"></i>
-                            <a style="font-weight:bold;color:{{ objects.line.color }}">{{ objects.line.name }}</a>
+                        <i class="bi bi-circle-fill" style="color:{{ objects.line.color }}"></i>
+                        <a style="font-weight:bold;color:{{ objects.line.color }}">{{ objects.line.name }}</a>
                     </td>
                     <td><a href="/stations/{{ objects.from_station.slug }}"
                            style="text-decoration: none">{{ objects.from_station.name }}</a></td>
@@ -44,10 +45,19 @@
                     <td>{{ time|last }}</td>
                     <td>
                         {% for day in objects.days %}
+                            {% day_color day as today %}
                             {% if weekday|indexone:day == "Sa" or weekday|indexone:day == "Su" %}
-                                <a style="color: #e30a0a">{{ weekday | indexone:day }}</a>
+                                {% if today == True %}
+                                    <a style="color: #e30a0a; font-weight: bold">{{ weekday | indexone:day }}</a>
+                                {% else %}
+                                    <a style="color: #ff6464">{{ weekday | indexone:day }}</a>
+                                {% endif %}
                             {% else %}
-                                <a>{{ weekday | indexone:day }}</a>
+                                {% if today == True %}
+                                    <a style="font-weight: bold">{{ weekday | indexone:day }}</a>
+                                {% else %}
+                                    <a style="color: #646464">{{ weekday | indexone:day }}</a>
+                                {% endif %}
                             {% endif %}
                         {% endfor %}
                     </td>

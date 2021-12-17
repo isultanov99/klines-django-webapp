@@ -34,7 +34,8 @@
                 <tbody>
                 {% find_train object as trains_list %}
                 {% for objects in trains_list %}
-                    <tr>
+                    {% today objects.days as tt %}
+                        <tr {% if not tt %} style="opacity: 0.5"{% endif %}>
                         <td><a href="/trains/{{ objects.num }}" style="text-decoration: none">{{ objects.num }}</a></td>
                         <td>
                             <i class="bi bi-circle-fill" style="color:{{ objects.line.color }}"></i>
@@ -48,10 +49,19 @@
                         <td>{% station_time objects.to_station objects %}</td>
                         <td>
                             {% for day in objects.days %}
+                                {% day_color day as today %}
                                 {% if weekday|indexone:day == "Sa" or weekday|indexone:day == "Su" %}
-                                    <a style="color: #e30a0a">{{ weekday | indexone:day }}</a>
+                                    {% if today == True %}
+                                        <a style="color: #e30a0a; font-weight: bold">{{ weekday | indexone:day }}</a>
+                                    {% else %}
+                                        <a style="color: #ff6464">{{ weekday | indexone:day }}</a>
+                                    {% endif %}
                                 {% else %}
-                                    <a>{{ weekday | indexone:day }}</a>
+                                    {% if today == True %}
+                                        <a style="font-weight: bold">{{ weekday | indexone:day }}</a>
+                                    {% else %}
+                                        <a style="color: #646464">{{ weekday | indexone:day }}</a>
+                                    {% endif %}
                                 {% endif %}
                             {% endfor %}
                         </td>
