@@ -1,8 +1,6 @@
 import folium
 from django.shortcuts import render, get_object_or_404
-
 from trains.models import *
-
 
 def detail(request, slug):
     station = get_object_or_404(Station, slug=slug)

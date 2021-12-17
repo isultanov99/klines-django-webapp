@@ -6,7 +6,7 @@ from django.shortcuts import redirect
 
 
 def page_not_found_view(request, exception):
-    return render(request, '../templates/404', status=404)
+    return render(request, '../templates/404.html', status=404)
 
 
 def check_input(get_request):
