@@ -3,7 +3,7 @@
     "model": "stations.line",
     "pk": 1,
     "fields": {
-      "name": "���",
+      "name": "Сов",
       "color": "#9E005D"
     }
   },
@@ -11,7 +11,7 @@
     "model": "stations.line",
     "pk": 2,
     "fields": {
-      "name": "����",
+      "name": "Черн",
       "color": "#00A99D"
     }
   },
@@ -19,7 +19,7 @@
     "model": "stations.line",
     "pk": 3,
     "fields": {
-      "name": "����",
+      "name": "Бгрт",
       "color": "#F15A24"
     }
   },
@@ -27,7 +27,7 @@
     "model": "stations.line",
     "pk": 4,
     "fields": {
-      "name": "���",
+      "name": "Мам",
       "color": "#0047AB"
     }
   },
@@ -35,7 +35,7 @@
     "model": "stations.line",
     "pk": 5,
     "fields": {
-      "name": "����",
+      "name": "Балт",
       "color": "#BE2A2A"
     }
   },
@@ -43,7 +43,7 @@
     "model": "stations.line",
     "pk": 6,
     "fields": {
-      "name": "����",
+      "name": "Свет",
       "color": "#FCEE21"
     }
   },
@@ -51,7 +51,7 @@
     "model": "stations.line",
     "pk": 7,
     "fields": {
-      "name": "���",
+      "name": "Зел",
       "color": "#8CC63F"
     }
   },
@@ -59,7 +59,7 @@
     "model": "stations.station",
     "pk": 1,
     "fields": {
-      "name": "4 ��",
+      "name": "4 км",
       "lat": 54.674011,
       "lon": 20.531794,
       "slug": "4-km",
@@ -72,7 +72,7 @@
     "model": "stations.station",
     "pk": 2,
     "fields": {
-      "name": "7 ��",
+      "name": "7 км",
       "lat": 54.801929,
       "lon": 20.518293,
       "slug": "7-km",
@@ -85,7 +85,7 @@
     "model": "stations.station",
     "pk": 3,
     "fields": {
-      "name": "13 ��",
+      "name": "13 км",
       "lat": 54.737081,
       "lon": 20.329378,
       "slug": "13-km",
@@ -98,7 +98,7 @@
     "model": "stations.station",
     "pk": 4,
     "fields": {
-      "name": "18 ��",
+      "name": "18 км",
       "lat": 54.734575,
       "lon": 20.262856,
       "slug": "18-km",
@@ -111,7 +111,7 @@
     "model": "stations.station",
     "pk": 5,
     "fields": {
-      "name": "20 ��-����",
+      "name": "20 км-Бгрт",
       "lat": 54.53015,
       "lon": 20.569589,
       "slug": "20-km-bgrt",
@@ -124,7 +124,7 @@
     "model": "stations.station",
     "pk": 6,
     "fields": {
-      "name": "20 ��-����",
+      "name": "20 км-Свет",
       "lat": 54.818479,
       "lon": 20.280578,
       "slug": "20-km-svet",
@@ -137,7 +137,7 @@
     "model": "stations.station",
     "pk": 7,
     "fields": {
-      "name": "21 ��",
+      "name": "21 км",
       "lat": 54.517948,
       "lon": 20.574672,
       "slug": "21-km",
@@ -150,7 +150,7 @@
     "model": "stations.station",
     "pk": 8,
     "fields": {
-      "name": "29 ��",
+      "name": "29 км",
       "lat": 54.740843,
       "lon": 20.07855,
       "slug": "29-km",
@@ -163,7 +163,7 @@
     "model": "stations.station",
     "pk": 9,
     "fields": {
-      "name": "45 ��",
+      "name": "45 км",
       "lat": 54.659934,
       "lon": 19.918587,
       "slug": "45-km",
@@ -176,7 +176,7 @@
     "model": "stations.station",
     "pk": 10,
     "fields": {
-      "name": "119 ��",
+      "name": "119 км",
       "lat": 55.072265,
       "lon": 21.783522,
       "slug": "119-km",
@@ -189,7 +189,7 @@
     "model": "stations.station",
     "pk": 11,
     "fields": {
-      "name": "1252 ��",
+      "name": "1252 км",
       "lat": 54.633167,
       "lon": 20.982408,
       "slug": "1252-km",
@@ -202,7 +202,7 @@
     "model": "stations.station",
     "pk": 12,
     "fields": {
-      "name": "1271 ��",
+      "name": "1271 км",
       "lat": 54.638448,
       "lon": 20.702017,
       "slug": "1271-km",
@@ -215,7 +215,7 @@
     "model": "stations.station",
     "pk": 13,
     "fields": {
-      "name": "1298 ��",
+      "name": "1298 км",
       "lat": 54.600548,
       "lon": 20.393451,
       "slug": "1298-km",
@@ -228,7 +228,7 @@
     "model": "stations.station",
     "pk": 14,
     "fields": {
-      "name": "1305 ��",
+      "name": "1305 км",
       "lat": 54.565642,
       "lon": 20.326226,
       "slug": "1305-km",
@@ -241,7 +241,7 @@
     "model": "stations.station",
     "pk": 15,
     "fields": {
-      "name": "1307 ��",
+      "name": "1307 км",
       "lat": 54.562658,
       "lon": 20.284894,
       "slug": "1307-km",
@@ -254,7 +254,7 @@
     "model": "stations.station",
     "pk": 16,
     "fields": {
-      "name": "1312 ��",
+      "name": "1312 км",
       "lat": 54.572529,
       "lon": 20.221337,
       "slug": "1312-km",
@@ -267,7 +267,7 @@
     "model": "stations.station",
     "pk": 17,
     "fields": {
-      "name": "1333 ��",
+      "name": "1333 км",
       "lat": 54.481293,
       "lon": 19.953925,
       "slug": "1333-km",
@@ -280,7 +280,7 @@
     "model": "stations.station",
     "pk": 18,
     "fields": {
-      "name": "�����������",
+      "name": "Айвазовский",
       "lat": 54.673215,
       "lon": 20.569331,
       "slug": "aivazovskii",
@@ -293,7 +293,7 @@
     "model": "stations.station",
     "pk": 19,
     "fields": {
-      "name": "�������������",
+      "name": "Багратионовск",
       "lat": 54.392683,
       "lon": 20.647702,
       "slug": "bagrationovsk",
@@ -306,7 +306,7 @@
     "model": "stations.station",
     "pk": 20,
     "fields": {
-      "name": "������-1",
+      "name": "Баевка-1",
       "lat": 54.809246,
       "lon": 20.758207,
       "slug": "baevka-1",
@@ -319,7 +319,7 @@
     "model": "stations.station",
     "pk": 21,
     "fields": {
-      "name": "������-2",
+      "name": "Баевка-2",
       "lat": 54.813126,
       "lon": 20.795031,
       "slug": "baevka-2",
@@ -332,7 +332,7 @@
     "model": "stations.station",
     "pk": 22,
     "fields": {
-      "name": "��������",
+      "name": "Балтийск",
       "lat": 54.64453,
       "lon": 19.896518,
       "slug": "baltiisk",
@@ -345,7 +345,7 @@
     "model": "stations.station",
     "pk": 23,
     "fields": {
-      "name": "��������",
+      "name": "Богатово",
       "lat": 54.844841,
       "lon": 21.347318,
       "slug": "bogatovo",
@@ -358,7 +358,7 @@
     "model": "stations.station",
     "pk": 24,
     "fields": {
-      "name": "����������",
+      "name": "Большаково",
       "lat": 54.882603,
       "lon": 21.64408,
       "slug": "bolshakovo",
@@ -371,7 +371,7 @@
     "model": "stations.station",
     "pk": 25,
     "fields": {
-      "name": "����������",
+      "name": "Брусничная",
       "lat": 54.712139,
       "lon": 20.428049,
       "slug": "brusnichnaia",
@@ -384,7 +384,7 @@
     "model": "stations.station",
     "pk": 26,
     "fields": {
-      "name": "���������",
+      "name": "Веселовка",
       "lat": 54.588207,
       "lon": 22.011759,
       "slug": "veselovka",
@@ -397,7 +397,7 @@
     "model": "stations.station",
     "pk": 27,
     "fields": {
-      "name": "����������",
+      "name": "Владимиров",
       "lat": 54.584792,
       "lon": 20.56232,
       "slug": "vladimirov",
@@ -410,7 +410,7 @@
     "model": "stations.station",
     "pk": 28,
     "fields": {
-      "name": "���������",
+      "name": "Гвардейск",
       "lat": 54.635845,
       "lon": 21.068869,
       "slug": "gvardeisk",
@@ -423,7 +423,7 @@
     "model": "stations.station",
     "pk": 29,
     "fields": {
-      "name": "��������",
+      "name": "Голубево",
       "lat": 54.615619,
       "lon": 20.408688,
       "slug": "golubevo",
@@ -436,7 +436,7 @@
     "model": "stations.station",
     "pk": 30,
     "fields": {
-      "name": "��������-1",
+      "name": "Гурьевск-1",
       "lat": 54.780377,
       "lon": 20.587006,
       "slug": "gurevsk-1",
@@ -449,7 +449,7 @@
     "model": "stations.station",
     "pk": 31,
     "fields": {
-      "name": "��������-2",
+      "name": "Гурьевск-2",
       "lat": 54.792556,
       "lon": 20.630278,
       "slug": "gurevsk-2",
@@ -462,7 +462,7 @@
     "model": "stations.station",
     "pk": 32,
     "fields": {
-      "name": "�����",
+      "name": "Гусев",
       "lat": 54.584923,
       "lon": 22.198808,
       "slug": "gusev",
@@ -475,7 +475,7 @@
     "model": "stations.station",
     "pk": 33,
     "fields": {
-      "name": "������",
+      "name": "Дивное",
       "lat": 54.60561,
       "lon": 22.400072,
       "slug": "divnoe",
@@ -488,7 +488,7 @@
     "model": "stations.station",
     "pk": 34,
     "fields": {
-      "name": "�������",
+      "name": "Добрино",
       "lat": 54.813619,
       "lon": 20.869388,
       "slug": "dobrino",
@@ -501,7 +501,7 @@
     "model": "stations.station",
     "pk": 35,
     "fields": {
-      "name": "�������",
+      "name": "Дружное",
       "lat": 54.781025,
       "lon": 20.350344,
       "slug": "druzhnoe",
@@ -514,7 +514,7 @@
     "model": "stations.station",
     "pk": 36,
     "fields": {
-      "name": "�������",
+      "name": "Залесье",
       "lat": 54.846633,
       "lon": 21.524559,
       "slug": "zalese",
@@ -527,7 +527,7 @@
     "model": "stations.station",
     "pk": 37,
     "fields": {
-      "name": "��������",
+      "name": "Западный",
       "lat": 54.710655,
       "lon": 20.457096,
       "slug": "zapadnyi",
@@ -540,7 +540,7 @@
     "model": "stations.station",
     "pk": 38,
     "fields": {
-      "name": "������������",
+      "name": "Зеленоградск",
       "lat": 54.95802,
       "lon": 20.473239,
       "slug": "zelenogradsk",
@@ -553,7 +553,7 @@
     "model": "stations.station",
     "pk": 39,
     "fields": {
-      "name": "��������",
+      "name": "Знаменка",
       "lat": 54.512081,
       "lon": 20.00337,
       "slug": "znamenka",
@@ -566,7 +566,7 @@
     "model": "stations.station",
     "pk": 40,
     "fields": {
-      "name": "��������",
+      "name": "Знаменск",
       "lat": 54.615082,
       "lon": 21.214875,
       "slug": "znamensk",
@@ -579,7 +579,7 @@
     "model": "stations.station",
     "pk": 41,
     "fields": {
-      "name": "�����������-��������",
+      "name": "Калининград-Северный",
       "lat": 54.721515,
       "lon": 20.501028,
       "slug": "kaliningrad-severnyi",
@@ -594,7 +594,7 @@
     "model": "stations.station",
     "pk": 42,
     "fields": {
-      "name": "�����������-�����",
+      "name": "Калининград-Южный",
       "lat": 54.693758,
       "lon": 20.498955,
       "slug": "kaliningrad-iuzhnyi",
@@ -613,7 +613,7 @@
     "model": "stations.station",
     "pk": 43,
     "fields": {
-      "name": "����������",
+      "name": "Каштановка",
       "lat": 54.868569,
       "lon": 20.492995,
       "slug": "kashtanovka",
@@ -626,7 +626,7 @@
     "model": "stations.station",
     "pk": 44,
     "fields": {
-      "name": "��������",
+      "name": "Киевская",
       "lat": 54.682003,
       "lon": 20.470333,
       "slug": "kievskaia",
@@ -639,7 +639,7 @@
     "model": "stations.station",
     "pk": 45,
     "fields": {
-      "name": "���������",
+      "name": "Колосовка",
       "lat": 54.801919,
       "lon": 20.303686,
       "slug": "kolosovka",
@@ -652,7 +652,7 @@
     "model": "stations.station",
     "pk": 46,
     "fields": {
-      "name": "�����������",
+      "name": "Комсомольск",
       "lat": 54.624597,
       "lon": 20.755409,
       "slug": "komsomolsk",
@@ -665,7 +665,7 @@
     "model": "stations.station",
     "pk": 47,
     "fields": {
-      "name": "��������������",
+      "name": "Константиновка",
       "lat": 54.80712,
       "lon": 20.68925,
       "slug": "konstantinovka",
@@ -678,7 +678,7 @@
     "model": "stations.station",
     "pk": 48,
     "fields": {
-      "name": "��������",
+      "name": "Куликово",
       "lat": 54.930067,
       "lon": 20.323643,
       "slug": "kulikovo",
@@ -691,7 +691,7 @@
     "model": "stations.station",
     "pk": 49,
     "fields": {
-      "name": "��������",
+      "name": "Кутузово",
       "lat": 54.746389,
       "lon": 20.532541,
       "slug": "kutuzovo",
@@ -705,7 +705,7 @@
     "model": "stations.station",
     "pk": 50,
     "fields": {
-      "name": "��������",
+      "name": "Ладушкин",
       "lat": 54.570767,
       "lon": 20.176925,
       "slug": "ladushkin",
@@ -718,7 +718,7 @@
     "model": "stations.station",
     "pk": 51,
     "fields": {
-      "name": "������",
+      "name": "Лесное",
       "lat": 54.728404,
       "lon": 20.364655,
       "slug": "lesnoe",
@@ -731,7 +731,7 @@
     "model": "stations.station",
     "pk": 52,
     "fields": {
-      "name": "�������",
+      "name": "Луговое",
       "lat": 54.65211,
       "lon": 20.62319,
       "slug": "lugovoe",
@@ -744,7 +744,7 @@
     "model": "stations.station",
     "pk": 53,
     "fields": {
-      "name": "�������",
+      "name": "Люблино",
       "lat": 54.736473,
       "lon": 20.299572,
       "slug": "liublino",
@@ -757,7 +757,7 @@
     "model": "stations.station",
     "pk": 54,
     "fields": {
-      "name": "���������",
+      "name": "Малиновка",
       "lat": 54.949606,
       "lon": 20.440275,
       "slug": "malinovka",
@@ -770,7 +770,7 @@
     "model": "stations.station",
     "pk": 55,
     "fields": {
-      "name": "��������",
+      "name": "Мамоново",
       "lat": 54.464335,
       "lon": 19.934739,
       "slug": "mamonovo",
@@ -783,7 +783,7 @@
     "model": "stations.station",
     "pk": 56,
     "fields": {
-      "name": "����������",
+      "name": "Междуречье",
       "lat": 54.619539,
       "lon": 21.543814,
       "slug": "mezhdureche",
@@ -796,7 +796,7 @@
     "model": "stations.station",
     "pk": 57,
     "fields": {
-      "name": "���������",
+      "name": "Мечниково",
       "lat": 54.682575,
       "lon": 19.93211,
       "slug": "mechnikovo",
@@ -809,7 +809,7 @@
     "model": "stations.station",
     "pk": 58,
     "fields": {
-      "name": "���������",
+      "name": "Муромское",
       "lat": 54.895004,
       "lon": 20.48702,
       "slug": "muromskoe",
@@ -822,7 +822,7 @@
     "model": "stations.station",
     "pk": 59,
     "fields": {
-      "name": "��������",
+      "name": "Нестеров",
       "lat": 54.628826,
       "lon": 22.578809,
       "slug": "nesterov",
@@ -835,7 +835,7 @@
     "model": "stations.station",
     "pk": 60,
     "fields": {
-      "name": "������",
+      "name": "Озерки",
       "lat": 54.630507,
       "lon": 20.895491,
       "slug": "ozerki",
@@ -848,7 +848,7 @@
     "model": "stations.station",
     "pk": 61,
     "fields": {
-      "name": "��������",
+      "name": "Отважное",
       "lat": 54.616706,
       "lon": 20.549753,
       "slug": "otvazhnoe",
@@ -861,7 +861,7 @@
     "model": "stations.station",
     "pk": 62,
     "fields": {
-      "name": "���������",
+      "name": "Пастухово",
       "lat": 54.614858,
       "lon": 21.653461,
       "slug": "pastukhovo",
@@ -874,7 +874,7 @@
     "model": "stations.station",
     "pk": 63,
     "fields": {
-      "name": "������������",
+      "name": "Переславское",
       "lat": 54.840652,
       "lon": 20.252111,
       "slug": "pereslavskoe",
@@ -887,7 +887,7 @@
     "model": "stations.station",
     "pk": 64,
     "fields": {
-      "name": "������",
+      "name": "Петино",
       "lat": 54.839817,
       "lon": 21.276894,
       "slug": "petino",
@@ -900,7 +900,7 @@
     "model": "stations.station",
     "pk": 65,
     "fields": {
-      "name": "���������� ������",
+      "name": "Пионерский Курорт",
       "lat": 54.949136,
       "lon": 20.225338,
       "slug": "pionerskii-kurort",
@@ -914,7 +914,7 @@
     "model": "stations.station",
     "pk": 66,
     "fields": {
-      "name": "�������",
+      "name": "Полесск",
       "lat": 54.855486,
       "lon": 21.10068,
       "slug": "polessk",
@@ -927,7 +927,7 @@
     "model": "stations.station",
     "pk": 67,
     "fields": {
-      "name": "��������",
+      "name": "Приморск",
       "lat": 54.732142,
       "lon": 20.003703,
       "slug": "primorsk",
@@ -940,7 +940,7 @@
     "model": "stations.station",
     "pk": 68,
     "fields": {
-      "name": "����������",
+      "name": "Приморское",
       "lat": 54.543898,
       "lon": 20.058653,
       "slug": "primorskoe",
@@ -953,7 +953,7 @@
     "model": "stations.station",
     "pk": 69,
     "fields": {
-      "name": "��������",
+      "name": "Приморье",
       "lat": 54.950535,
       "lon": 20.454158,
       "slug": "primore",
@@ -966,7 +966,7 @@
     "model": "stations.station",
     "pk": 70,
     "fields": {
-      "name": "��������",
+      "name": "Пушкарёво",
       "lat": 54.621909,
       "lon": 21.379511,
       "slug": "pushkarevo",
@@ -979,7 +979,7 @@
     "model": "stations.station",
     "pk": 71,
     "fields": {
-      "name": "��������",
+      "name": "Ржевское",
       "lat": 55.073669,
       "lon": 21.72743,
       "slug": "rzhevskoe",
@@ -992,7 +992,7 @@
     "model": "stations.station",
     "pk": 72,
     "fields": {
-      "name": "��������",
+      "name": "Романово",
       "lat": 54.897982,
       "lon": 20.238846,
       "slug": "romanovo",
@@ -1005,7 +1005,7 @@
     "model": "stations.station",
     "pk": 73,
     "fields": {
-      "name": "������",
+      "name": "Рощино",
       "lat": 54.92881,
       "lon": 20.362897,
       "slug": "roshchino",
@@ -1018,7 +1018,7 @@
     "model": "stations.station",
     "pk": 74,
     "fields": {
-      "name": "���������",
+      "name": "Рябиновка",
       "lat": 54.827468,
       "lon": 20.507348,
       "slug": "riabinovka",
@@ -1031,7 +1031,7 @@
     "model": "stations.station",
     "pk": 75,
     "fields": {
-      "name": "�����������-1",
+      "name": "Светлогорск-1",
       "lat": 54.933378,
       "lon": 20.16071,
       "slug": "svetlogorsk-1",
@@ -1045,7 +1045,7 @@
     "model": "stations.station",
     "pk": 76,
     "fields": {
-      "name": "�����������-2",
+      "name": "Светлогорск-2",
       "lat": 54.944111,
       "lon": 20.14682,
       "slug": "svetlogorsk-2",
@@ -1059,7 +1059,7 @@
     "model": "stations.station",
     "pk": 77,
     "fields": {
-      "name": "�������",
+      "name": "Светлое",
       "lat": 54.578993,
       "lon": 20.356141,
       "slug": "svetloe",
@@ -1072,7 +1072,7 @@
     "model": "stations.station",
     "pk": 78,
     "fields": {
-      "name": "������",
+      "name": "Сельма",
       "lat": 54.739533,
       "lon": 20.483441,
       "slug": "selma",
@@ -1085,7 +1085,7 @@
     "model": "stations.station",
     "pk": 79,
     "fields": {
-      "name": "������",
+      "name": "Славск",
       "lat": 55.043137,
       "lon": 21.659735,
       "slug": "slavsk",
@@ -1098,7 +1098,7 @@
     "model": "stations.station",
     "pk": 80,
     "fields": {
-      "name": "����������",
+      "name": "Славянское",
       "lat": 54.83922,
       "lon": 20.974458,
       "slug": "slavianskoe",
@@ -1111,7 +1111,7 @@
     "model": "stations.station",
     "pk": 81,
     "fields": {
-      "name": "�������",
+      "name": "Советск",
       "lat": 55.082759,
       "lon": 21.879656,
       "slug": "sovetsk",
@@ -1124,7 +1124,7 @@
     "model": "stations.station",
     "pk": 82,
     "fields": {
-      "name": "����������-1",
+      "name": "Сокольники-1",
       "lat": 54.943536,
       "lon": 20.413334,
       "slug": "sokolniki-1",
@@ -1137,7 +1137,7 @@
     "model": "stations.station",
     "pk": 83,
     "fields": {
-      "name": "����������-2",
+      "name": "Сокольники-2",
       "lat": 54.938916,
       "lon": 20.396884,
       "slug": "sokolniki-2",
@@ -1150,7 +1150,7 @@
     "model": "stations.station",
     "pk": 84,
     "fields": {
-      "name": "��������",
+      "name": "Сосновка",
       "lat": 54.93316,
       "lon": 20.490004,
       "slug": "sosnovka",
@@ -1163,7 +1163,7 @@
     "model": "stations.station",
     "pk": 85,
     "fields": {
-      "name": "�������� ���",
+      "name": "Сосновый Бор",
       "lat": 54.556916,
       "lon": 20.113188,
       "slug": "sosnovyi-bor",
@@ -1176,7 +1176,7 @@
     "model": "stations.station",
     "pk": 86,
     "fields": {
-      "name": "��������",
+      "name": "Стрельня",
       "lat": 54.507348,
       "lon": 20.582091,
       "slug": "strelnia",
@@ -1189,7 +1189,7 @@
     "model": "stations.station",
     "pk": 87,
     "fields": {
-      "name": "������������",
+      "name": "Чернышевское",
       "lat": 54.636907,
       "lon": 22.734524,
       "slug": "chernyshevskoe",
@@ -1202,7 +1202,7 @@
     "model": "stations.station",
     "pk": 88,
     "fields": {
-      "name": "����������",
+      "name": "Черняховск",
       "lat": 54.628576,
       "lon": 21.818842,
       "slug": "cherniakhovsk",
@@ -1215,7 +1215,7 @@
     "model": "stations.station",
     "pk": 89,
     "fields": {
-      "name": "��������",
+      "name": "Чкаловск",
       "lat": 54.764818,
       "lon": 20.445629,
       "slug": "chkalovsk",
@@ -1228,7 +1228,7 @@
     "model": "stations.station",
     "pk": 90,
     "fields": {
-      "name": "�������",
+      "name": "Шиповка",
       "lat": 54.740995,
       "lon": 20.187848,
       "slug": "shipovka",
@@ -1241,7 +1241,7 @@
     "model": "stations.station",
     "pk": 91,
     "fields": {
-      "name": "��������",
+      "name": "Шолохово",
       "lat": 54.84274,
       "lon": 21.210077,
       "slug": "sholokhovo",
@@ -1254,7 +1254,7 @@
     "model": "stations.station",
     "pk": 92,
     "fields": {
-      "name": "��������",
+      "name": "Щегловка",
       "lat": 55.079213,
       "lon": 21.650432,
       "slug": "shcheglovka",
