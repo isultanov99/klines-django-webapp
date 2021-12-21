@@ -38,6 +38,24 @@ def same_line(st1, st2):
 
 
 @register.simple_tag
+def sov_svet(st1, st2):
+    return any(set([line.id for line in st1.line.all()]) & set([1, 6]) and
+               set([line.id for line in st2.line.all()]) & set([1, 6]))
+
+
+@register.simple_tag
+def sov_zel(st1, st2):
+    return any(set([line.id for line in st1.line.all()]) & set([1, 7]) and
+               set([line.id for line in st2.line.all()]) & set([1, 7]))
+
+
+@register.simple_tag
+def svet_zel(st1, st2):
+    return any(set([line.id for line in st1.line.all()]) & set([6]) and
+               set([line.id for line in st2.line.all()]) & set([7]))
+
+
+@register.simple_tag
 def time_delta(time1, time2):
     t1 = datetime.strptime(time1, "%H:%M")
     t2 = datetime.strptime(time2, "%H:%M")
