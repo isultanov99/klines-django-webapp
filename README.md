@@ -1,6 +1,6 @@
 # Kaliningrad Regional Rail Web App
 
-`Django 3.2.9` powered website with interactive map, stations list, routes and more.
+`Django 3.2.9` powered website with `LeafletJS` interactive map, stations list, routes and more.
 `Bootstrap` framework and `PostreSQL` database is also used.
 
 ## Getting Started
