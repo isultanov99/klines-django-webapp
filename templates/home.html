@@ -585,10 +585,12 @@
             maxZoom: 3,
             zoomDelta: 0.25,
             zoomSnap: 0.25,
+            maxBoundsViscosity: 1.0
         });
         var svgElement = document.querySelector('#image'),
             bounds = [[0,0], [430,430]];
-            maxbounds = [[50,-30], [380,330]];
+            maxbounds = [[50,-60], [380,310]];
+
 
         map.fitBounds(bounds);
         map.setMaxBounds(maxbounds);

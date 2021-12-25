@@ -51,7 +51,7 @@ def sov_zel(st1, st2):
 
 @register.simple_tag
 def svet_zel(st1, st2):
-    return (st1.id == 76 or st1.id == 75 or 7 not in [line.id for line in st1.line.all()]) and any(set([line.id for line in st2.line.all()]) & set([7]))
+    return (st1.id == 76 or st1.id == 75 or 6 in [line.id for line in st1.line.all()] and 7 not in [line.id for line in st1.line.all()]) and any(set([line.id for line in st2.line.all()]) & set([7]))
 
 
 @register.simple_tag
